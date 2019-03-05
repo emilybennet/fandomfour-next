@@ -55,14 +55,11 @@ const ActiveLineMobile = styled.div`
   }
 `;
 
-const Tab = ({ text, color, index, ...props }) => {
-  // console.log(tabId);
-  return (
-    <Button onClick={() => props.switchTab(index)} style={{ color: color }}>
-      {text}
-    </Button>
-  );
-};
+const Tab = ({ text, color, index, ...props }) => (
+  <Button onClick={() => props.switchTab(index)} style={{ color: color }}>
+    {text}
+  </Button>
+);
 
 const TabBar = ({ tabs, activeTab, ...props }) => (
   <Container>

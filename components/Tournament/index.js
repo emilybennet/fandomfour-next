@@ -33,10 +33,11 @@ const CONFERENCE_TABS = [
 ];
 
 const Container = styled.section`
-  /* align-items: center; */
-  /* display: flex; */
-  /* flex-direction: column; */
   padding: 100px 15px;
+`;
+
+const BracketWrap = styled.div`
+  min-height: 400px;
 `;
 
 class Tournament extends React.Component {
@@ -58,13 +59,13 @@ class Tournament extends React.Component {
           switchTab={this.switchTab}
           activeTab={this.state.activeTab}
         />
-        <div>
+        <BracketWrap>
           {this.state.activeTab === 0 && <Bracket {...Sun} />}
           {this.state.activeTab === 1 && <Bracket {...Moon} />}
           {this.state.activeTab === 2 && <Bracket {...Stars} />}
           {this.state.activeTab === 3 && <Bracket {...Chaos} />}
           {this.state.activeTab === 4 && <Bracket {...Finals} />}
-        </div>
+        </BracketWrap>
       </Container>
     );
   }

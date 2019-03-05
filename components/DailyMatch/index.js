@@ -46,7 +46,6 @@ const TitleYellow = styled(Title)`
 `;
 
 const DailyMatch = props => {
-  console.log(players[dailyMatch[0].playerA].name);
   return (
     <Container>
       <TitleYellow>Today&rsquo;s Matches</TitleYellow>
