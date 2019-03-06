@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import EpisodeId from "./EpisodeId";
+import EpisodeId from "../EpisodeId";
 
 const StyledDiv = styled.div`
   color: ${props => props.theme.black};
@@ -15,8 +15,16 @@ const Player = ({ name, id, color, loser = false, ...props }) => {
   if (loser || id === "???") {
     color = "#E5E5E5";
   }
+  const cursor = id !== "???" ? "pointer" : "default";
   return (
-    <StyledDiv style={{ borderColor: dividerColor }}>
+    <StyledDiv
+      onClick={() => {
+        if (id !== "???") {
+          props.toggleModal(id);
+        }
+      }}
+      style={{ borderColor: dividerColor, cursor }}
+    >
       <EpisodeId id={id} color={color} />
       {name}
     </StyledDiv>

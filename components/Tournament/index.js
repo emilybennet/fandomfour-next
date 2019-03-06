@@ -53,18 +53,33 @@ class Tournament extends React.Component {
   render() {
     return (
       <Container>
-        <Title style={{ marginBottom: "0.5em" }}>Tournament Bracket</Title>
+        <Title
+          onClick={this.props.toggleModal}
+          style={{ marginBottom: "0.5em" }}
+        >
+          Tournament Bracket
+        </Title>
         <TabBar
           tabs={CONFERENCE_TABS}
           switchTab={this.switchTab}
           activeTab={this.state.activeTab}
         />
         <BracketWrap>
-          {this.state.activeTab === 0 && <Bracket {...Sun} />}
-          {this.state.activeTab === 1 && <Bracket {...Moon} />}
-          {this.state.activeTab === 2 && <Bracket {...Stars} />}
-          {this.state.activeTab === 3 && <Bracket {...Chaos} />}
-          {this.state.activeTab === 4 && <Bracket {...Finals} />}
+          {this.state.activeTab === 0 && (
+            <Bracket {...Sun} toggleModal={this.props.toggleModal} />
+          )}
+          {this.state.activeTab === 1 && (
+            <Bracket {...Moon} toggleModal={this.props.toggleModal} />
+          )}
+          {this.state.activeTab === 2 && (
+            <Bracket {...Stars} toggleModal={this.props.toggleModal} />
+          )}
+          {this.state.activeTab === 3 && (
+            <Bracket {...Chaos} toggleModal={this.props.toggleModal} />
+          )}
+          {this.state.activeTab === 4 && (
+            <Bracket {...Finals} toggleModal={this.props.toggleModal} />
+          )}
         </BracketWrap>
       </Container>
     );

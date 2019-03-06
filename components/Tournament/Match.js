@@ -18,8 +18,8 @@ const StyledDiv = styled.div`
 
 const Match = ({ playerA, playerB = null, color = false, ...props }) => (
   <StyledDiv style={{ borderColor: color }}>
-    <Player {...playerA} color={color} />
-    <Player {...playerB} color={color} />
+    <Player {...playerA} color={color} toggleModal={props.toggleModal} />
+    <Player {...playerB} color={color} toggleModal={props.toggleModal} />
   </StyledDiv>
 );
 

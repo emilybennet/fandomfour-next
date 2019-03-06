@@ -41,6 +41,7 @@ const Versus = styled.span`
 
 const PlayerContainer = styled.div`
   align-items: center;
+  cursor: pointer;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -84,10 +85,13 @@ const MatchActions = styled.footer`
   margin-top: 70px;
 `;
 
-const Player = ({ name, rotate = 0, ...props }) => (
-  <PlayerContainer className="player">
+const Player = ({ player, rotate = 0, ...props }) => (
+  <PlayerContainer
+    className="player"
+    onClick={() => props.toggleModal(player.id)}
+  >
     <PlayerNameplate className="player-nameplate" />
-    <PlayerName className="player-name">{name}</PlayerName>
+    <PlayerName className="player-name">{player.name}</PlayerName>
   </PlayerContainer>
 );
 
@@ -111,12 +115,13 @@ const Match = ({
   url = false,
   voteUrl = null,
   voteTime = null,
+  toggleModal,
   ...props
 }) => (
   <Container>
-    <Player name={playerA} rotate={4} />
+    <Player player={playerA} rotate={4} toggleModal={toggleModal} />
     <Versus>Versus</Versus>
-    <Player name={playerB} rotate={-4} />
+    <Player player={playerB} rotate={-4} toggleModal={toggleModal} />
     <MatchActions>
       <VoteBtn voteUrl={voteUrl} voteTime={voteTime} />
     </MatchActions>

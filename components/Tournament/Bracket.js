@@ -49,7 +49,7 @@ const RoundColumn = styled.div`
   justify-content: space-around;
 `;
 
-const Round = ({ matches, color }) => {
+const Round = ({ matches, color, ...props }) => {
   let unknownId = 0;
 
   return (
@@ -60,6 +60,7 @@ const Round = ({ matches, color }) => {
           playerB={players[m.playerB]}
           color={color}
           key={m.id}
+          toggleModal={props.toggleModal}
         />
       ))}
     </RoundColumn>
@@ -68,26 +69,26 @@ const Round = ({ matches, color }) => {
 
 const TwoRounds = ({ round1, round2, round3, color = null, ...props }) => (
   <ContainerTwoRounds>
-    <Round matches={round1} color={color} />
+    <Round matches={round1} color={color} toggleModal={props.toggleModal} />
     <BraceColumn>
       <BraceLevel1 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round2} color={color} />
+    <Round matches={round2} color={color} toggleModal={props.toggleModal} />
   </ContainerTwoRounds>
 );
 
 const ThreeRounds = ({ round1, round2, round3, color = null, ...props }) => (
   <Container>
-    <Round matches={round1} color={color} />
+    <Round matches={round1} color={color} toggleModal={props.toggleModal} />
     <BraceColumn>
       <BraceLevel1 style={{ borderColor: color }} />
       <BraceLevel1 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round2} color={color} />
+    <Round matches={round2} color={color} toggleModal={props.toggleModal} />
     <BraceColumn>
       <BraceLevel2 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round3} color={color} />
+    <Round matches={round3} color={color} toggleModal={props.toggleModal} />
   </Container>
 );
 

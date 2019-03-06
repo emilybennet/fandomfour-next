@@ -52,14 +52,16 @@ const DailyMatch = props => {
       <Matches>
         <Match
           {...dailyMatch[0]}
-          playerA={players[dailyMatch[0].playerA].name}
-          playerB={players[dailyMatch[0].playerB].name}
+          playerA={players[dailyMatch[0].playerA]}
+          playerB={players[dailyMatch[0].playerB]}
+          toggleModal={props.toggleModal}
         />
         <Divider />
         <Match
           {...dailyMatch[1]}
-          playerA={players[dailyMatch[1].playerA].name}
-          playerB={players[dailyMatch[1].playerB].name}
+          playerA={players[dailyMatch[1].playerA]}
+          playerB={players[dailyMatch[1].playerB]}
+          toggleModal={props.toggleModal}
         />
       </Matches>
     </Container>
