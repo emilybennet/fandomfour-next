@@ -49,9 +49,6 @@ const PlayerContainer = styled.div`
   justify-content: center;
   max-width: 385px;
   width: 100%;
-  @media (max-width: calc(385px * 2 + 203px)) {
-    max-width: 300px;
-  }
 `;
 
 const PlayerName = styled.div`

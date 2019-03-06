@@ -7,7 +7,7 @@ import dailyMatch from "../../data/daily_match";
 
 const Container = styled.section`
   background: url("/static/karen-pattern.webp") repeat,
-    radial-gradient(50vw at 50% 56.73%, #4fb0aa 0%, #334d90 100%);
+    radial-gradient(60vw at 50% 56.73%, #4fb0aa 0%, #334d90 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw));
   overflow: hidden;
   padding: 200px 15px;

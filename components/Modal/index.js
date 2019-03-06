@@ -55,9 +55,12 @@ const Header = styled.header`
   > div {
     height: 275px;
   }
-  picture {
-    display: flex;
-    align-items: center;
+`;
+
+const HeaderPicture = styled.picture`
+  display: flex;
+  img {
+    object-fit: cover;
   }
 `;
 
@@ -88,6 +91,7 @@ const WatchButton = styled(Button)`
 
 const Name = styled.h2`
   align-content: flex-end;
+  align-items: center;
   color: ${props => props.theme.white};
   display: flex;
   font-family: ${props => props.theme.poppins};
@@ -95,6 +99,9 @@ const Name = styled.h2`
   font-weight: 900;
   height: auto;
   padding: 0 50px;
+  @media (max-width: 450px) {
+    padding: 0 20px;
+  }
 `;
 
 const Synopsis = styled.p`
@@ -102,6 +109,9 @@ const Synopsis = styled.p`
   font-size: 1.11em;
   line-height: 1.8;
   margin: 20px 50px 40px;
+  @media (max-width: 450px) {
+    margin: 20px 20px 40px;
+  }
 `;
 
 const Metrics = styled.div`
@@ -111,6 +121,9 @@ const Metrics = styled.div`
   grid-template-columns: 120px 1fr;
   grid-gap: 20px 0;
   margin: 0 50px;
+  @media (max-width: 450px) {
+    margin: 0 20px;
+  }
 `;
 
 const MetricLabel = styled.label`
@@ -185,10 +198,10 @@ const Modal = ({ showModal, toggleModal, contentId, ...props }) => {
       <ModalBox>
         <CloseBtn action={toggleModal} />
         <Header>
-          <picture>
+          <HeaderPicture>
             <source type="image/webp" srcSet={`/static/thumbs/${p.id}.webp`} />
             <img src={`/static/thumbs/${p.id}.jpg`} />
-          </picture>
+          </HeaderPicture>
           <HeaderGradient />
           <Name>
             <EpisodeId id={p.id} />
