@@ -11,7 +11,7 @@ const Anchor = styled.a`
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 3.2px;
-  padding: 12px 0;
+  padding: 12px 30px;
   text-decoration: none;
   text-transform: uppercase;
   transition: background 0.15s;
@@ -25,11 +25,6 @@ const Anchor = styled.a`
     border: 1px solid ${props => props.theme.yellow};
     color: ${props => props.theme.yellow};
     cursor: default;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 2em;
-    margin-right: 2em;
   }
 `;
 
