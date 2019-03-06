@@ -25,7 +25,7 @@ var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour
 var Anchor = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a.withConfig({
   displayName: "Button__Anchor",
   componentId: "sc-1xq4sxj-0"
-})(["background:", ";border-radius:3px;color:", ";cursor:pointer;display:block;font-family:", ";font-size:0.9em;font-weight:600;letter-spacing:3.2px;padding:12px 0;text-decoration:none;text-transform:uppercase;transition:background 0.15s;&:hover{background:", ";}&[disabled]{background:transparent;border:1px solid ", ";color:", ";cursor:default;}&:not(:last-child){margin-bottom:2em;margin-right:2em;}"], function (props) {
+})(["background:", ";border-radius:3px;color:", ";cursor:pointer;display:block;font-family:", ";font-size:0.9em;font-weight:600;letter-spacing:3.2px;padding:12px 30px;text-decoration:none;text-transform:uppercase;transition:background 0.15s;&:hover{background:", ";}&[disabled]{background:transparent;border:1px solid ", ";color:", ";cursor:default;}"], function (props) {
   return props.theme.yellow;
 }, function (props) {
   return props.theme.black;
@@ -50,14 +50,14 @@ var Button = function Button(_ref) {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Anchor, {
     style: props.style,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 35
     },
     __self: this
   }, text));
@@ -67,7 +67,7 @@ var Button = function Button(_ref) {
   }, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 40
     },
     __self: this
   }), text);
@@ -111,7 +111,7 @@ var Versus = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.with
 var PlayerContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Match__PlayerContainer",
   componentId: "sc-1x6kl6x-2"
-})(["align-items:center;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;height:110px;justify-content:center;max-width:385px;width:100%;@media (max-width:calc(385px * 2 + 203px)){max-width:300px;}"]);
+})(["align-items:center;cursor:pointer;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;height:110px;justify-content:center;max-width:385px;width:100%;"]);
 var PlayerName = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "Match__PlayerName",
   componentId: "sc-1x6kl6x-3"
@@ -132,33 +132,36 @@ var MatchActions = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].foo
 })(["margin-top:70px;"]);
 
 var Player = function Player(_ref) {
-  var name = _ref.name,
+  var player = _ref.player,
       _ref$rotate = _ref.rotate,
       rotate = _ref$rotate === void 0 ? 0 : _ref$rotate,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "rotate"]);
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["player", "rotate"]);
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerContainer, {
     className: "player",
+    onClick: function onClick() {
+      return props.toggleModal(player.id);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 86
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerNameplate, {
     className: "player-nameplate",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerName, {
     className: "player-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: this
-  }, name));
+  }, player.name));
 };
 
 var VoteBtn = function VoteBtn(_ref2) {
@@ -176,7 +179,7 @@ var VoteBtn = function VoteBtn(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   });
@@ -185,7 +188,7 @@ var VoteBtn = function VoteBtn(_ref2) {
     disabled: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   });
@@ -200,40 +203,43 @@ var Match = function Match(_ref3) {
       voteUrl = _ref3$voteUrl === void 0 ? null : _ref3$voteUrl,
       _ref3$voteTime = _ref3.voteTime,
       voteTime = _ref3$voteTime === void 0 ? null : _ref3$voteTime,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref3, ["playerA", "playerB", "url", "voteUrl", "voteTime"]);
+      toggleModal = _ref3.toggleModal,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref3, ["playerA", "playerB", "url", "voteUrl", "voteTime", "toggleModal"]);
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
-    name: playerA,
-    rotate: 4,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 117
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Versus, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 118
     },
     __self: this
-  }, "Versus"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
-    name: playerB,
-    rotate: -4,
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
+    player: playerA,
+    rotate: 4,
+    toggleModal: toggleModal,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 119
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MatchActions, {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Versus, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
+    },
+    __self: this
+  }, "Versus"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
+    player: playerB,
+    rotate: -4,
+    toggleModal: toggleModal,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MatchActions, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(VoteBtn, {
@@ -241,7 +247,7 @@ var Match = function Match(_ref3) {
     voteTime: voteTime,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 123
     },
     __self: this
   })));
@@ -279,7 +285,7 @@ var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].section.withConfig({
   displayName: "DailyMatch__Container",
   componentId: "sc-7bvmbn-0"
-})(["background:url(\"/static/karen-pattern.webp\") repeat,radial-gradient(50vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));overflow:hidden;padding:200px 15px;position:relative;z-index:400;.no-webp &{background:url(\"/static/karen-pattern.png\") repeat,radial-gradient(50vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);}"]);
+})(["background:url(\"/static/karen-pattern.webp\") repeat,radial-gradient(60vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));overflow:hidden;padding:200px 15px;position:relative;z-index:400;.no-webp &{background:url(\"/static/karen-pattern.png\") repeat,radial-gradient(50vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);}"]);
 var Matches = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "DailyMatch__Matches",
   componentId: "sc-7bvmbn-1"
@@ -298,31 +304,31 @@ var TitleYellow = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default
 });
 
 var DailyMatch = function DailyMatch(props) {
-  console.log(_data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0].playerA].name);
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleYellow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 51
     },
     __self: this
   }, "Today\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
-    playerA: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0].playerA].name,
-    playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0].playerB].name,
+    playerA: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0].playerA],
+    playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0].playerB],
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Divider, {
@@ -332,8 +338,9 @@ var DailyMatch = function DailyMatch(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1], {
-    playerA: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerA].name,
-    playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerB].name,
+    playerA: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerA],
+    playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerB],
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
@@ -343,6 +350,51 @@ var DailyMatch = function DailyMatch(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DailyMatch);
+
+/***/ }),
+
+/***/ "./components/EpisodeId.js":
+/*!*********************************!*\
+  !*** ./components/EpisodeId.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/EpisodeId.js";
+
+
+var StyledSpan = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "EpisodeId__StyledSpan",
+  componentId: "sc-1fm36gf-0"
+})(["background:", ";border-radius:0.2em;color:", ";display:inline-block;font-family:", ";font-size:1em;font-weight:bold;line-height:1;margin-right:0.55em;min-width:40px;padding:0.5em 0.7em 0.4em 0.8em;text-align:center;"], function (props) {
+  return props.theme.blue;
+}, function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.plex;
+});
+
+var EpisodeId = function EpisodeId(_ref) {
+  var id = _ref.id,
+      color = _ref.color;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSpan, {
+    style: {
+      background: color
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, id);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EpisodeId);
 
 /***/ }),
 
@@ -486,6 +538,313 @@ var Header = function Header(props) {
 
 /***/ }),
 
+/***/ "./components/Modal/index.js":
+/*!***********************************!*\
+  !*** ./components/Modal/index.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _EpisodeId__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../EpisodeId */ "./components/EpisodeId.js");
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Button */ "./components/Button.js");
+/* harmony import */ var _data_players__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../data/players */ "./data/players.js");
+
+var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/Modal/index.js";
+
+
+
+
+
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Modal__Container",
+  componentId: "ki55yo-0"
+})(["align-items:center;background:rgba(0,0,0,0.85);display:flex;display:none;height:100vh;justify-content:center;left:0;position:fixed;top:0;width:100vw;z-index:1000;"]);
+var ModalBox = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].section.withConfig({
+  displayName: "Modal__ModalBox",
+  componentId: "ki55yo-1"
+})(["background:", ";border-radius:3px;color:", ";max-height:760px;max-width:900px;overflow-y:scroll;position:relative;width:900px;@media (max-height:850px){max-height:100vh;height:100vh;}"], function (props) {
+  return props.theme.black;
+}, function (props) {
+  return props.theme.white;
+});
+var Header = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header.withConfig({
+  displayName: "Modal__Header",
+  componentId: "ki55yo-2"
+})(["align-items:flex-end;border-radius:3px 3px 0px 0px;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;flex-direction:column;justify-content:flex-end;height:275px;overflow:hidden;width:100%;picture,h2,> div{grid-column-start:1;grid-row-start:1;width:100%;}picture,> div{height:275px;}"]);
+var HeaderPicture = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].picture.withConfig({
+  displayName: "Modal__HeaderPicture",
+  componentId: "ki55yo-3"
+})(["display:flex;img{object-fit:cover;}"]);
+var HeaderGradient = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Modal__HeaderGradient",
+  componentId: "ki55yo-4"
+})(["background:linear-gradient(180deg,rgba(0,0,0,0) 0%,#000000 91.71%);"]);
+var Footer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].footer.withConfig({
+  displayName: "Modal__Footer",
+  componentId: "ki55yo-5"
+})(["align-items:center;display:flex;flex-direction:row;justify-content:center;padding:40px;& > a{margin:0 20px;}@media (max-width:700px){flex-direction:column;& > a{margin:0 0 20px;}}"]);
+var WatchButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_Button__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
+  displayName: "Modal__WatchButton",
+  componentId: "ki55yo-6"
+})(["padding:0 20px;"]);
+var Name = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h2.withConfig({
+  displayName: "Modal__Name",
+  componentId: "ki55yo-7"
+})(["align-content:flex-end;align-items:center;color:", ";display:flex;font-family:", ";font-size:1.66em;font-weight:900;height:auto;padding:0 50px;@media (max-width:450px){padding:0 20px;}"], function (props) {
+  return props.theme.white;
+}, function (props) {
+  return props.theme.poppins;
+});
+var Synopsis = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Modal__Synopsis",
+  componentId: "ki55yo-8"
+})(["font-family ", ";font-size:1.11em;line-height:1.8;margin:20px 50px 40px;@media (max-width:450px){margin:20px 20px 40px;}"], function (props) {
+  return props.theme.poppins;
+});
+var Metrics = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Modal__Metrics",
+  componentId: "ki55yo-9"
+})(["display:grid;color:", ";font-size:0.83em;grid-template-columns:120px 1fr;grid-gap:20px 0;margin:0 50px;@media (max-width:450px){margin:0 20px;}"], function (props) {
+  return props.theme.white;
+});
+var MetricLabel = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].label.withConfig({
+  displayName: "Modal__MetricLabel",
+  componentId: "ki55yo-10"
+})(["color:", ";"], function (props) {
+  return props.theme.yellow;
+});
+
+var Metric = function Metric(_ref) {
+  var label = _ref.label,
+      value = _ref.value;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MetricLabel, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: this
+  }, label), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  }, value));
+};
+
+var CloseShape = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
+  displayName: "Modal__CloseShape",
+  componentId: "ki55yo-11"
+})(["align-items:center;background:rgba(0,0,0,0.3);border-radius:15px;cursor:pointer;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;height:30px;justify-items:center;position:absolute;right:5px;top:5px;transition:background 0.15s;width:30px;&:hover{background:rgba(0,0,0,0.6);}div{background:", ";grid-column-start:1;grid-row-start:1;height:1px;width:21px;&:first-child{transform:rotate(45deg);}&:last-child{transform:rotate(-45deg);}}"], function (props) {
+  return props.theme.white;
+});
+
+var CloseBtn = function CloseBtn(_ref2) {
+  var action = _ref2.action;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CloseShape, {
+    onClick: function onClick() {
+      return action();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176
+    },
+    __self: this
+  }));
+};
+
+var Modal = function Modal(_ref3) {
+  var showModal = _ref3.showModal,
+      toggleModal = _ref3.toggleModal,
+      contentId = _ref3.contentId,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref3, ["showModal", "toggleModal", "contentId"]);
+
+  var show = showModal ? "flex" : "none";
+  var p = _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][contentId] ? _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][contentId] : {
+    id: null,
+    name: null,
+    season: 0,
+    episode: 0,
+    director: null,
+    writer: null,
+    released: null,
+    watchNetflix: null,
+    watchYouTube: null,
+    synopsis: null
+  };
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
+    style: {
+      display: show
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 197
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ModalBox, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 198
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(CloseBtn, {
+    action: toggleModal,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 199
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Header, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 200
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeaderPicture, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 201
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("source", {
+    type: "image/webp",
+    srcSet: "/static/thumbs/".concat(p.id, ".webp"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: "/static/thumbs/".concat(p.id, ".jpg"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HeaderGradient, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Name, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_EpisodeId__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: p.id,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 207
+    },
+    __self: this
+  }), p.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Synopsis, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 211
+    },
+    __self: this
+  }, p.synopsis), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metrics, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 212
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metric, {
+    label: "Season",
+    value: p.season,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metric, {
+    label: "Episode",
+    value: p.episode,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metric, {
+    label: "Directed By",
+    value: p.director,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 215
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metric, {
+    label: "Written By",
+    value: p.writer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Metric, {
+    label: "Released",
+    value: p.released,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Footer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 219
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    text: "Watch on Netflix",
+    url: p.watchNetflix,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 220
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    text: "Watch on YouTube",
+    url: p.watchYouTube,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 221
+    },
+    __self: this
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Modal);
+
+/***/ }),
+
 /***/ "./components/Title.js":
 /*!*****************************!*\
   !*** ./components/Title.js ***!
@@ -580,7 +939,9 @@ var RoundColumn = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.
 
 var Round = function Round(_ref) {
   var matches = _ref.matches,
-      color = _ref.color;
+      color = _ref.color,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["matches", "color"]);
+
   var unknownId = 0;
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RoundColumn, {
     __source: {
@@ -594,6 +955,7 @@ var Round = function Round(_ref) {
       playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][m.playerB],
       color: color,
       key: m.id,
+      toggleModal: props.toggleModal,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 58
@@ -614,21 +976,22 @@ var TwoRounds = function TwoRounds(_ref2) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ContainerTwoRounds, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round1,
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -637,15 +1000,16 @@ var TwoRounds = function TwoRounds(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round2,
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: this
   }));
@@ -662,21 +1026,22 @@ var ThreeRounds = function ThreeRounds(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 81
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round1,
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -685,7 +1050,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -694,21 +1059,22 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 85
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round2,
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 87
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel2, {
@@ -717,15 +1083,16 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round3,
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: this
   }));
@@ -735,65 +1102,20 @@ var Bracket = function Bracket(props) {
   if (props.round3) return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThreeRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: this
   }));
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TwoRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: this
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Bracket);
-
-/***/ }),
-
-/***/ "./components/Tournament/EpisodeId.js":
-/*!********************************************!*\
-  !*** ./components/Tournament/EpisodeId.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/Tournament/EpisodeId.js";
-
-
-var StyledSpan = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
-  displayName: "EpisodeId__StyledSpan",
-  componentId: "sc-1bw9ruc-0"
-})(["background:", ";border-radius:0.2em;color:", ";display:inline-block;font-family:", ";font-size:1em;font-weight:bold;line-height:1;margin-right:0.55em;min-width:40px;padding:0.5em 0.7em 0.4em 0.8em;text-align:center;"], function (props) {
-  return props.theme.blue;
-}, function (props) {
-  return props.theme.white;
-}, function (props) {
-  return props.theme.plex;
-});
-
-var EpisodeId = function EpisodeId(_ref) {
-  var id = _ref.id,
-      color = _ref.color;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSpan, {
-    style: {
-      background: color
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, id);
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (EpisodeId);
 
 /***/ }),
 
@@ -846,6 +1168,7 @@ var Match = function Match(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerA, {
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -853,6 +1176,7 @@ var Match = function Match(_ref) {
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerB, {
     color: color,
+    toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
@@ -878,7 +1202,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _EpisodeId__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./EpisodeId */ "./components/Tournament/EpisodeId.js");
+/* harmony import */ var _EpisodeId__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../EpisodeId */ "./components/EpisodeId.js");
 
 var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/Tournament/Player.js";
 
@@ -907,13 +1231,20 @@ var Player = function Player(_ref) {
     color = "#E5E5E5";
   }
 
+  var cursor = id !== "???" ? "pointer" : "default";
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledDiv, {
+    onClick: function onClick() {
+      if (id !== "???") {
+        props.toggleModal(id);
+      }
+    },
     style: {
-      borderColor: dividerColor
+      borderColor: dividerColor,
+      cursor: cursor
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_EpisodeId__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -921,7 +1252,7 @@ var Player = function Player(_ref) {
     color: color,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 28
     },
     __self: this
   }), name);
@@ -986,7 +1317,6 @@ var Tab = function Tab(_ref) {
       index = _ref.index,
       props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["text", "color", "index"]);
 
-  // console.log(tabId);
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Button, {
     onClick: function onClick() {
       return props.switchTab(index);
@@ -996,7 +1326,7 @@ var Tab = function Tab(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     },
     __self: this
   }, text);
@@ -1010,19 +1340,19 @@ var TabBar = function TabBar(_ref2) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TabRow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 67
     },
     __self: this
   }, tabs.map(function (t, i) {
@@ -1033,7 +1363,7 @@ var TabBar = function TabBar(_ref2) {
       key: t.text,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 70
       },
       __self: this
     }));
@@ -1044,7 +1374,7 @@ var TabBar = function TabBar(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 80
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ActiveLineMobile, {
@@ -1054,7 +1384,7 @@ var TabBar = function TabBar(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 86
     },
     __self: this
   })));
@@ -1131,6 +1461,10 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].sectio
   displayName: "Tournament__Container",
   componentId: "sc-18cwlee-0"
 })(["padding:100px 15px;"]);
+var BracketWrap = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
+  displayName: "Tournament__BracketWrap",
+  componentId: "sc-18cwlee-1"
+})(["min-height:400px;"]);
 
 var Tournament =
 /*#__PURE__*/
@@ -1169,16 +1503,17 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Container, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Title__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        onClick: this.props.toggleModal,
         style: {
           marginBottom: "0.5em"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }, "Tournament Bracket"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_TabBar__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -1187,43 +1522,48 @@ function (_React$Component) {
         activeTab: this.state.activeTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      }, this.state.activeTab === 0 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_sun__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 62
         },
         __self: this
-      })), this.state.activeTab === 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_moon__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BracketWrap, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 67
+        },
+        __self: this
+      }, this.state.activeTab === 0 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_sun__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        toggleModal: this.props.toggleModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      })), this.state.activeTab === 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_moon__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        toggleModal: this.props.toggleModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
         },
         __self: this
       })), this.state.activeTab === 2 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_stars__WEBPACK_IMPORTED_MODULE_15__["default"], {
+        toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 75
         },
         __self: this
       })), this.state.activeTab === 3 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_chaos__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 78
         },
         __self: this
       })), this.state.activeTab === 4 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_finals__WEBPACK_IMPORTED_MODULE_17__["default"], {
+        toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 81
         },
         __self: this
       }))));
@@ -15189,13 +15529,28 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header/index.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer/index.js");
-/* harmony import */ var _components_DailyMatch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/DailyMatch */ "./components/DailyMatch/index.js");
-/* harmony import */ var _components_Tournament__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Tournament */ "./components/Tournament/index.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Header */ "./components/Header/index.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer/index.js");
+/* harmony import */ var _components_DailyMatch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/DailyMatch */ "./components/DailyMatch/index.js");
+/* harmony import */ var _components_Tournament__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Tournament */ "./components/Tournament/index.js");
+/* harmony import */ var _components_Modal__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Modal */ "./components/Modal/index.js");
+
+
+
+
+
+
+
 var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/pages/index.js";
 
 
@@ -15204,39 +15559,95 @@ var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour
 
 
 
-var HomePage = function HomePage(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DailyMatch__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Tournament__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }));
-};
+
+var HomePage =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(HomePage, _React$Component);
+
+  function HomePage() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, HomePage);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HomePage)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      modalContentId: null,
+      showModal: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "toggleModal", function () {
+      var modalContentId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+      document.body.style.overflow = _this.state.showModal ? "unset" : "hidden";
+
+      _this.setState(function (prevState) {
+        return {
+          showModal: !prevState.showModal,
+          modalContentId: modalContentId
+        };
+      });
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(HomePage, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_DailyMatch__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        toggleModal: this.toggleModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Tournament__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        toggleModal: this.toggleModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Modal__WEBPACK_IMPORTED_MODULE_13__["default"], {
+        showModal: this.state.showModal,
+        toggleModal: this.toggleModal,
+        contentId: this.state.modalContentId,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return HomePage;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
 
