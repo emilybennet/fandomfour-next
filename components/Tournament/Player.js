@@ -11,11 +11,15 @@ const StyledDiv = styled.div`
 `;
 
 const Player = ({ name, id, color, loser = false, ...props }) => {
-  const dividerColor = color;
+  let styles = {
+    borderColor: color
+  };
   if (loser || id === "???") {
     color = "#E5E5E5";
+    styles.color = "#CCCCCC";
+    styles.textDecoration = "line-through";
   }
-  const cursor = id !== "???" ? "pointer" : "default";
+  styles.cursor = id !== "???" ? "pointer" : "default";
   return (
     <StyledDiv
       onClick={() => {
@@ -23,7 +27,7 @@ const Player = ({ name, id, color, loser = false, ...props }) => {
           props.toggleModal(id);
         }
       }}
-      style={{ borderColor: dividerColor, cursor }}
+      style={styles}
     >
       <EpisodeId id={id} color={color} />
       {name}
