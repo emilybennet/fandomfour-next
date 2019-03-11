@@ -35,8 +35,8 @@ export default {
     {
       playerA: "5×12",
       playerB: "5×7",
-      voteUrl: null,
-      voteTime: null,
+      voteUrl: "https://twitter.com/BronyCon/status/1105226903072452609",
+      voteTime: "3/11 6pm",
       meta: false,
       id: "stars-r1-m3"
     },
