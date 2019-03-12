@@ -955,6 +955,7 @@ var Round = function Round(_ref) {
       playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][m.playerB],
       color: color,
       key: m.id,
+      id: m.id,
       toggleModal: props.toggleModal,
       __source: {
         fileName: _jsxFileName,
@@ -976,7 +977,7 @@ var TwoRounds = function TwoRounds(_ref2) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ContainerTwoRounds, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -985,13 +986,13 @@ var TwoRounds = function TwoRounds(_ref2) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1000,7 +1001,7 @@ var TwoRounds = function TwoRounds(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1009,7 +1010,7 @@ var TwoRounds = function TwoRounds(_ref2) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 77
     },
     __self: this
   }));
@@ -1026,7 +1027,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1035,13 +1036,13 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1050,7 +1051,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 85
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1059,7 +1060,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 86
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1068,13 +1069,13 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel2, {
@@ -1083,7 +1084,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1092,7 +1093,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 92
     },
     __self: this
   }));
@@ -1102,14 +1103,14 @@ var Bracket = function Bracket(props) {
   if (props.round3) return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThreeRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: this
   }));
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TwoRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: this
   }));
@@ -1158,6 +1159,7 @@ var Match = function Match(_ref) {
       props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["playerA", "playerB", "color"]);
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StyledDiv, {
+    "data-matchid": props.id,
     style: {
       borderColor: color
     },
@@ -1221,30 +1223,31 @@ var Player = function Player(_ref) {
   var name = _ref.name,
       id = _ref.id,
       color = _ref.color,
-      _ref$loser = _ref.loser,
-      loser = _ref$loser === void 0 ? false : _ref$loser,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "loser"]);
+      _ref$eliminated = _ref.eliminated,
+      eliminated = _ref$eliminated === void 0 ? false : _ref$eliminated,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "eliminated"]);
 
-  var dividerColor = color;
+  var styles = {
+    borderColor: color
+  };
 
-  if (loser || id === "???") {
+  if (eliminated || id === "???") {
     color = "#E5E5E5";
+    styles.color = "#CCCCCC";
+    styles.textDecoration = "line-through";
   }
 
-  var cursor = id !== "???" ? "pointer" : "default";
+  styles.cursor = id !== "???" ? "pointer" : "default";
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledDiv, {
     onClick: function onClick() {
       if (id !== "???") {
         props.toggleModal(id);
       }
     },
-    style: {
-      borderColor: dividerColor,
-      cursor: cursor
-    },
+    style: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_EpisodeId__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1252,7 +1255,7 @@ var Player = function Player(_ref) {
     color: color,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 32
     },
     __self: this
   }), name);
@@ -1626,7 +1629,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "5×18",
     playerB: "2×14",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/12 6pm",
     meta: false,
     id: "chaos-r1-m4"
   }],
@@ -1741,8 +1744,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "2×5",
     playerB: "4×18",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1105498696203018240",
+    voteTime: "3/12 12pm",
     meta: false,
     id: "moon-r1-m2"
   }, {
@@ -1921,7 +1924,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "sun-r1-m4"
   }],
   round2: [{
-    playerA: "unknown",
+    playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1956,21 +1959,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ([{
-  playerA: "7×13",
-  playerB: "4×9",
-  voteUrl: "https://twitter.com/BronyCon/status/1105136309033672704",
-  voteTime: "3/11 Noon",
-  meta: false,
-  id: "sun-r1-m1"
-}, {
-  playerA: "5×12",
-  playerB: "5×7",
-  voteUrl: "https://twitter.com/BronyCon/status/1105226903072452609",
-  voteTime: "6pm",
-  meta: false,
-  id: "stars-r1-m3"
-}]);
+/* harmony import */ var _conference_sun__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./conference_sun */ "./data/conference_sun.js");
+/* harmony import */ var _conference_moon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./conference_moon */ "./data/conference_moon.js");
+/* harmony import */ var _conference_stars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./conference_stars */ "./data/conference_stars.js");
+/* harmony import */ var _conference_chaos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./conference_chaos */ "./data/conference_chaos.js");
+/* harmony import */ var _conference_finals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./conference_finals */ "./data/conference_finals.js");
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[1], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[3]]);
 
 /***/ }),
 
@@ -2205,6 +2204,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×9": {
     id: "4×9",
+    eliminated: true,
     name: "Pinkie Apple Pie",
     season: 4,
     episode: 9,
