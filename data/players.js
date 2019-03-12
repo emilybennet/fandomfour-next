@@ -239,6 +239,7 @@ export default {
   },
   "4×9": {
     id: "4×9",
+    eliminated: true,
     name: "Pinkie Apple Pie",
     season: 4,
     episode: 9,

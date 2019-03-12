@@ -51,7 +51,7 @@ export default {
   ],
   round2: [
     {
-      playerA: "unknown",
+      playerA: "7×13",
       playerB: "unknown",
       voteUrl: null,
       voteTime: null,
