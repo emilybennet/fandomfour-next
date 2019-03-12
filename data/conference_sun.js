@@ -22,7 +22,11 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1105136309033672704",
       voteTime: "3/11 12pm",
       meta: false,
-      id: "sun-r1-m1"
+      id: "sun-r1-m1",
+      results: {
+        playerA: 511,
+        playerB: 73
+      }
     },
     {
       playerA: "8×23",
