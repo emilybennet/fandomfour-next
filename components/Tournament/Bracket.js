@@ -60,6 +60,7 @@ const Round = ({ matches, color, ...props }) => {
           playerB={players[m.playerB]}
           color={color}
           key={m.id}
+          id={m.id}
           toggleModal={props.toggleModal}
         />
       ))}

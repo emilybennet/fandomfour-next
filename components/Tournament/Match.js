@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
 `;
 
 const Match = ({ playerA, playerB = null, color = false, ...props }) => (
-  <StyledDiv style={{ borderColor: color }}>
+  <StyledDiv data-matchid={props.id} style={{ borderColor: color }}>
     <Player {...playerA} color={color} toggleModal={props.toggleModal} />
     <Player {...playerB} color={color} toggleModal={props.toggleModal} />
   </StyledDiv>
