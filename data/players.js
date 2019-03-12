@@ -305,6 +305,7 @@ export default {
   },
   "5×7": {
     id: "5×7",
+    eliminated: true,
     name: "Make New Friends but Keep Discord",
     season: 5,
     episode: 7,
