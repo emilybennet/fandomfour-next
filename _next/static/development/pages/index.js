@@ -1851,7 +1851,7 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "stars-r2-m1"
   }, {
-    playerA: "unknown",
+    playerA: "5×12",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1900,7 +1900,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105136309033672704",
     voteTime: "3/11 12pm",
     meta: false,
-    id: "sun-r1-m1"
+    id: "sun-r1-m1",
+    results: {
+      playerA: 511,
+      playerB: 73
+    }
   }, {
     playerA: "8×23",
     playerB: "3×3",
@@ -2265,6 +2269,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×7": {
     id: "5×7",
+    eliminated: true,
     name: "Make New Friends but Keep Discord",
     season: 5,
     episode: 7,
