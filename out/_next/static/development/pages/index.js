@@ -1628,7 +1628,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "5×18",
     playerB: "2×14",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1105589323729113088",
     voteTime: "3/12 6pm",
     meta: false,
     id: "chaos-r1-m4"
@@ -1834,7 +1834,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105226903072452609",
     voteTime: "3/11 6pm",
     meta: false,
-    id: "stars-r1-m3"
+    id: "stars-r1-m3",
+    results: {
+      playerA: 266,
+      playerB: 130
+    }
   }, {
     playerA: "1×14",
     playerB: "4×8",
