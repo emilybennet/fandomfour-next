@@ -1747,12 +1747,16 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105498696203018240",
     voteTime: "3/12 12pm",
     meta: false,
-    id: "moon-r1-m2"
+    id: "moon-r1-m2",
+    results: {
+      playerA: 237,
+      playerB: 257
+    }
   }, {
     playerA: "2×22",
     playerB: "7×23",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/13 6pm",
     meta: false,
     id: "moon-r1-m3"
   }, {
@@ -1765,7 +1769,7 @@ __webpack_require__.r(__webpack_exports__);
   }],
   round2: [{
     playerA: "unknown",
-    playerB: "unknown",
+    playerB: "4×18",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1919,8 +1923,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "1×16",
     playerB: "2×16",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1105861266504073216",
+    voteTime: "3/13 12pm",
     meta: false,
     id: "sun-r1-m3"
   }, {
@@ -1977,7 +1981,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[1], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[3]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[2], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[2]]);
 
 /***/ }),
 
@@ -2080,6 +2084,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×5": {
     id: "2×5",
+    eliminated: true,
     name: "Sisterhooves Social",
     season: 2,
     episode: 5,
