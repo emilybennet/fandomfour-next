@@ -136,6 +136,7 @@ export default {
   },
   "2×14": {
     id: "2×14",
+    eliminated: true,
     name: "The Last Roundup",
     season: 2,
     episode: 14,
