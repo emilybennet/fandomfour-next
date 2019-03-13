@@ -96,6 +96,7 @@ export default {
   },
   "2×5": {
     id: "2×5",
+    eliminated: true,
     name: "Sisterhooves Social",
     season: 2,
     episode: 5,
