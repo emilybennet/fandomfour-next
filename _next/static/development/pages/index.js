@@ -1510,7 +1510,6 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Title__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        onClick: this.props.toggleModal,
         style: {
           marginBottom: "0.5em"
         },
@@ -1525,48 +1524,48 @@ function (_React$Component) {
         activeTab: this.state.activeTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(BracketWrap, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 62
         },
         __self: this
       }, this.state.activeTab === 0 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_sun__WEBPACK_IMPORTED_MODULE_13__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 64
         },
         __self: this
       })), this.state.activeTab === 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_moon__WEBPACK_IMPORTED_MODULE_14__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 67
         },
         __self: this
       })), this.state.activeTab === 2 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_stars__WEBPACK_IMPORTED_MODULE_15__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 70
         },
         __self: this
       })), this.state.activeTab === 3 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_chaos__WEBPACK_IMPORTED_MODULE_16__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 73
         },
         __self: this
       })), this.state.activeTab === 4 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_finals__WEBPACK_IMPORTED_MODULE_17__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 76
         },
         __self: this
       }))));
@@ -1631,7 +1630,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105589323729113088",
     voteTime: "3/12 6pm",
     meta: false,
-    id: "chaos-r1-m4"
+    id: "chaos-r1-m4",
+    results: {
+      playerA: 308,
+      playerB: 38
+    }
   }],
   round2: [{
     playerA: "unknown",
@@ -1642,7 +1645,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "chaos-r2-m1"
   }, {
     playerA: "unknown",
-    playerB: "unknown",
+    playerB: "5×18",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1755,7 +1758,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "2×22",
     playerB: "7×23",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1105951711825412101",
     voteTime: "3/13 6pm",
     meta: false,
     id: "moon-r1-m3"
@@ -2121,6 +2124,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×14": {
     id: "2×14",
+    eliminated: true,
     name: "The Last Roundup",
     season: 2,
     episode: 14,
