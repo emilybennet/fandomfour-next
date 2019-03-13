@@ -53,12 +53,7 @@ class Tournament extends React.Component {
   render() {
     return (
       <Container>
-        <Title
-          onClick={this.props.toggleModal}
-          style={{ marginBottom: "0.5em" }}
-        >
-          Tournament Bracket
-        </Title>
+        <Title style={{ marginBottom: "0.5em" }}>Tournament Bracket</Title>
         <TabBar
           tabs={CONFERENCE_TABS}
           switchTab={this.switchTab}
