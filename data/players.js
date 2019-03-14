@@ -400,6 +400,7 @@ export default {
   },
   "7×23": {
     id: "7×23",
+    eliminated: true,
     name: "Secrets and Pies",
     season: 7,
     episode: 23,

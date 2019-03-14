@@ -42,7 +42,11 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1105951711825412101",
       voteTime: "3/13 6pm",
       meta: false,
-      id: "moon-r1-m3"
+      id: "moon-r1-m3",
+      results: {
+        playerA: 289,
+        playerB: 98
+      }
     },
     {
       playerA: "7×10",
@@ -63,7 +67,7 @@ export default {
       id: "moon-r2-m1"
     },
     {
-      playerA: "unknown",
+      playerA: "2×22",
       playerB: "unknown",
       voteUrl: null,
       voteTime: null,
