@@ -1613,7 +1613,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "1×26",
     playerB: "2×11",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1106314095924572160",
     voteTime: "3/14 6pm",
     meta: false,
     id: "chaos-r1-m2"
@@ -1761,7 +1761,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105951711825412101",
     voteTime: "3/13 6pm",
     meta: false,
-    id: "moon-r1-m3"
+    id: "moon-r1-m3",
+    results: {
+      playerA: 289,
+      playerB: 98
+    }
   }, {
     playerA: "7×10",
     playerB: "5×9",
@@ -1778,7 +1782,7 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "moon-r2-m1"
   }, {
-    playerA: "unknown",
+    playerA: "2×22",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -2372,6 +2376,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "7×23": {
     id: "7×23",
+    eliminated: true,
     name: "Secrets and Pies",
     season: 7,
     episode: 23,
