@@ -1614,7 +1614,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×26",
     playerB: "2×11",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/14 6pm",
     meta: false,
     id: "chaos-r1-m2"
   }, {
@@ -1831,8 +1831,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "2×4",
     playerB: "3×6",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1106223524056911872",
+    voteTime: "3/14 12pm",
     meta: false,
     id: "stars-r1-m2"
   }, {
@@ -1929,7 +1929,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1105861266504073216",
     voteTime: "3/13 12pm",
     meta: false,
-    id: "sun-r1-m3"
+    id: "sun-r1-m3",
+    results: {
+      playerA: 302,
+      playerB: 130
+    }
   }, {
     playerA: "2×20",
     playerB: "4×21",
@@ -1946,7 +1950,7 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "sun-r2-m1"
   }, {
-    playerA: "unknown",
+    playerA: "1×16",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1984,7 +1988,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[2], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[2]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[1], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[1]]);
 
 /***/ }),
 
@@ -2137,6 +2141,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×16": {
     id: "2×16",
+    eliminated: true,
     name: "Read It and Weep",
     season: 2,
     episode: 16,
