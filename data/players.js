@@ -150,6 +150,7 @@ export default {
   },
   "2×16": {
     id: "2×16",
+    eliminated: true,
     name: "Read It and Weep",
     season: 2,
     episode: 16,

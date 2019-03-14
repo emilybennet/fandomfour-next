@@ -28,7 +28,7 @@ export default {
       playerA: "1×26",
       playerB: "2×11",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/14 6pm",
       meta: false,
       id: "chaos-r1-m2"
     },
