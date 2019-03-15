@@ -1741,7 +1741,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×23",
     playerB: "4×14",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/15 6pm",
     meta: false,
     id: "moon-r1-m1"
   }, {
@@ -1838,7 +1838,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106223524056911872",
     voteTime: "3/14 12pm",
     meta: false,
-    id: "stars-r1-m2"
+    id: "stars-r1-m2",
+    results: {
+      playerA: 257,
+      playerB: 122
+    }
   }, {
     playerA: "5×12",
     playerB: "5×7",
@@ -1853,14 +1857,14 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "1×14",
     playerB: "4×8",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1106585906994122752",
+    voteTime: "3/15 12pm",
     meta: false,
     id: "stars-r1-m4"
   }],
   round2: [{
     playerA: "unknown",
-    playerB: "unknown",
+    playerB: "2×4",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1992,7 +1996,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[1], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[1]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[3], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[0]]);
 
 /***/ }),
 
@@ -2206,6 +2210,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "3×6": {
     id: "3×6",
+    eliminated: true,
     name: "Sleepless in Ponyville",
     season: 3,
     episode: 6,
