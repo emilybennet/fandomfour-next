@@ -1,8 +1,8 @@
 webpackHotUpdate("static/development/pages/index.js",{
 
-/***/ "./data/conference_chaos.js":
+/***/ "./data/conference_stars.js":
 /*!**********************************!*\
-  !*** ./data/conference_chaos.js ***!
+  !*** ./data/conference_stars.js ***!
   \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -20,42 +20,46 @@ __webpack_require__.r(__webpack_exports__);
 //   }
 // };
 //
-// C H A O S
+// S T A R S
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  color: "#87C88C",
+  color: "#FFC30F",
   round1: [{
-    playerA: "1×25",
-    playerB: "5×10",
+    playerA: "2×3",
+    playerB: "2×8",
     voteUrl: null,
     voteTime: null,
     meta: false,
-    id: "chaos-r1-m1"
+    id: "stars-r1-m1"
   }, {
-    playerA: "1×26",
-    playerB: "2×11",
-    voteUrl: "https://twitter.com/BronyCon/status/1106314095924572160",
-    voteTime: "3/14 6pm",
+    playerA: "2×4",
+    playerB: "3×6",
+    voteUrl: "https://twitter.com/BronyCon/status/1106223524056911872",
+    voteTime: "3/14 12pm",
     meta: false,
-    id: "chaos-r1-m2"
-  }, {
-    playerA: "4×12",
-    playerB: "2×24",
-    voteUrl: null,
-    voteTime: null,
-    meta: false,
-    id: "chaos-r1-m3"
-  }, {
-    playerA: "5×18",
-    playerB: "2×14",
-    voteUrl: "https://twitter.com/BronyCon/status/1105589323729113088",
-    voteTime: "3/12 6pm",
-    meta: false,
-    id: "chaos-r1-m4",
+    id: "stars-r1-m2",
     results: {
-      playerA: 308,
-      playerB: 38
+      playerA: 257,
+      playerB: 122
     }
+  }, {
+    playerA: "5×12",
+    playerB: "5×7",
+    voteUrl: "https://twitter.com/BronyCon/status/1105226903072452609",
+    voteTime: "3/11 6pm",
+    meta: false,
+    id: "stars-r1-m3",
+    results: {
+      playerA: 266,
+      playerB: 130
+    }
+  }, {
+    playerA: "1×14",
+    playerB: "4×8",
+    voteUrl: "https://twitter.com/BronyCon/status/1106585906994122752",
+    voteTime: "3/15 12pm",
+    meta: false,
+    id: "stars-r1-m4"
   }],
   round2: [{
     playerA: "unknown",
@@ -63,14 +67,14 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: null,
     voteTime: null,
     meta: false,
-    id: "chaos-r2-m1"
+    id: "stars-r2-m1"
   }, {
-    playerA: "unknown",
-    playerB: "5×18",
+    playerA: "5×12",
+    playerB: "unknown",
     voteUrl: null,
     voteTime: null,
     meta: false,
-    id: "chaos-r2-m2"
+    id: "stars-r2-m2"
   }],
   round3: [{
     playerA: "unknown",
@@ -78,11 +82,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: null,
     voteTime: null,
     meta: false,
-    id: "chaos-r3-m1"
+    id: "stars-r3-m1"
   }]
 });
 
 /***/ })
 
 })
-//# sourceMappingURL=index.js.9611ed0edbe6c1e1e832.hot-update.js.map
+//# sourceMappingURL=index.js.ed717b5e0de9793b882a.hot-update.js.map
