@@ -1616,7 +1616,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106314095924572160",
     voteTime: "3/14 6pm",
     meta: false,
-    id: "chaos-r1-m2"
+    id: "chaos-r1-m2",
+    results: {
+      playerA: 247,
+      playerB: 188
+    }
   }, {
     playerA: "4×12",
     playerB: "2×24",
@@ -1638,7 +1642,7 @@ __webpack_require__.r(__webpack_exports__);
   }],
   round2: [{
     playerA: "unknown",
-    playerB: "unknown",
+    playerB: "1×26",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1740,7 +1744,7 @@ __webpack_require__.r(__webpack_exports__);
   round1: [{
     playerA: "1×23",
     playerB: "4×14",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1106676473388302339",
     voteTime: "3/15 6pm",
     meta: false,
     id: "moon-r1-m1"
@@ -2124,6 +2128,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×11": {
     id: "2×11",
+    eliminated: true,
     name: "Hearth's Warming Eve",
     season: 2,
     episode: 11,
