@@ -216,6 +216,7 @@ export default {
   },
   "3×6": {
     id: "3×6",
+    eliminated: true,
     name: "Sleepless in Ponyville",
     season: 3,
     episode: 6,

@@ -30,7 +30,11 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1106223524056911872",
       voteTime: "3/14 12pm",
       meta: false,
-      id: "stars-r1-m2"
+      id: "stars-r1-m2",
+      results: {
+        playerA: 257,
+        playerB: 122
+      }
     },
     {
       playerA: "5×12",
@@ -47,8 +51,8 @@ export default {
     {
       playerA: "1×14",
       playerB: "4×8",
-      voteUrl: null,
-      voteTime: null,
+      voteUrl: "https://twitter.com/BronyCon/status/1106585906994122752",
+      voteTime: "3/15 12pm",
       meta: false,
       id: "stars-r1-m4"
     }
@@ -56,7 +60,7 @@ export default {
   round2: [
     {
       playerA: "unknown",
-      playerB: "unknown",
+      playerB: "2×4",
       voteUrl: null,
       voteTime: null,
       meta: false,
