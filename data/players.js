@@ -123,6 +123,7 @@ export default {
   },
   "2×11": {
     id: "2×11",
+    eliminated: true,
     name: "Hearth's Warming Eve",
     season: 2,
     episode: 11,
