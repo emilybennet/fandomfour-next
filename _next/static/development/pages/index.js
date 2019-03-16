@@ -946,7 +946,7 @@ var Round = function Round(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RoundColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 55
     },
     __self: this
   }, matches.map(function (m) {
@@ -956,10 +956,12 @@ var Round = function Round(_ref) {
       color: color,
       key: m.id,
       id: m.id,
+      meta: m.meta,
       toggleModal: props.toggleModal,
+      switchTab: props.switchTab,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 57
       },
       __self: this
     });
@@ -977,22 +979,23 @@ var TwoRounds = function TwoRounds(_ref2) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ContainerTwoRounds, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round1,
     color: color,
     toggleModal: props.toggleModal,
+    switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1001,16 +1004,17 @@ var TwoRounds = function TwoRounds(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 81
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round2,
     color: color,
     toggleModal: props.toggleModal,
+    switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 83
     },
     __self: this
   }));
@@ -1027,22 +1031,23 @@ var ThreeRounds = function ThreeRounds(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 93
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round1,
     color: color,
     toggleModal: props.toggleModal,
+    switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 94
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 100
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1051,7 +1056,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 101
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1060,22 +1065,23 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 102
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round2,
     color: color,
     toggleModal: props.toggleModal,
+    switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 104
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 110
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel2, {
@@ -1084,16 +1090,17 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 111
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
     matches: round3,
     color: color,
     toggleModal: props.toggleModal,
+    switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 113
     },
     __self: this
   }));
@@ -1103,14 +1110,14 @@ var Bracket = function Bracket(props) {
   if (props.round3) return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThreeRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 123
     },
     __self: this
   }));
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TwoRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 124
     },
     __self: this
   }));
@@ -1144,11 +1151,15 @@ var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour
 var StyledDiv = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "Match__StyledDiv",
   componentId: "c3es4h-0"
-})(["border:1px solid ", ";border-radius:2px;width:265px;& > div:not(:last-child){border-bottom:1px solid ", ";}&:not(:first-child){margin-top:25px;}&:not(:last-child){margin-bottom:25px;}"], function (props) {
+})(["border:1px solid ", ";border-radius:2px;position:relative;width:265px;& > div:not(:last-of-type){border-bottom:1px solid ", ";}&:not(:first-child){margin-top:25px;}&:not(:last-child){margin-bottom:25px;}"], function (props) {
   return props.theme.blue;
 }, function (props) {
   return props.theme.blue;
 });
+var MetaLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].span.withConfig({
+  displayName: "Match__MetaLink",
+  componentId: "c3es4h-1"
+})(["color:#878383;cursor:pointer;font-size:0.6em;margin-top:5px;position:absolute;right:0;"]);
 
 var Match = function Match(_ref) {
   var playerA = _ref.playerA,
@@ -1156,7 +1167,9 @@ var Match = function Match(_ref) {
       playerB = _ref$playerB === void 0 ? null : _ref$playerB,
       _ref$color = _ref.color,
       color = _ref$color === void 0 ? false : _ref$color,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["playerA", "playerB", "color"]);
+      _ref$meta = _ref.meta,
+      meta = _ref$meta === void 0 ? false : _ref$meta,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["playerA", "playerB", "color", "meta"]);
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StyledDiv, {
     "data-matchid": props.id,
@@ -1165,7 +1178,7 @@ var Match = function Match(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerA, {
@@ -1173,7 +1186,7 @@ var Match = function Match(_ref) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 37
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerB, {
@@ -1181,10 +1194,19 @@ var Match = function Match(_ref) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 38
     },
     __self: this
-  })));
+  })), meta && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(MetaLink, {
+    onClick: function onClick() {
+      return props.switchTab(meta.changeToTab);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, meta.text));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Match);
@@ -1535,6 +1557,7 @@ function (_React$Component) {
         __self: this
       }, this.state.activeTab === 0 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_sun__WEBPACK_IMPORTED_MODULE_13__["default"], {
         toggleModal: this.props.toggleModal,
+        switchTab: this.switchTab,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 64
@@ -1542,30 +1565,33 @@ function (_React$Component) {
         __self: this
       })), this.state.activeTab === 1 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_moon__WEBPACK_IMPORTED_MODULE_14__["default"], {
         toggleModal: this.props.toggleModal,
+        switchTab: this.switchTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 71
         },
         __self: this
       })), this.state.activeTab === 2 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_stars__WEBPACK_IMPORTED_MODULE_15__["default"], {
         toggleModal: this.props.toggleModal,
+        switchTab: this.switchTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 78
         },
         __self: this
       })), this.state.activeTab === 3 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_chaos__WEBPACK_IMPORTED_MODULE_16__["default"], {
         toggleModal: this.props.toggleModal,
+        switchTab: this.switchTab,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 85
         },
         __self: this
       })), this.state.activeTab === 4 && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_Bracket__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_conference_finals__WEBPACK_IMPORTED_MODULE_17__["default"], {
         toggleModal: this.props.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 92
         },
         __self: this
       }))));
@@ -1624,8 +1650,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "4×12",
     playerB: "2×24",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1106948320986054658",
+    voteTime: "3/16 12pm",
     meta: false,
     id: "chaos-r1-m3"
   }, {
@@ -1660,7 +1686,10 @@ __webpack_require__.r(__webpack_exports__);
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
-    meta: false,
+    meta: {
+      text: "Winner To Finals >",
+      changeToTab: 4
+    },
     id: "chaos-r3-m1"
   }]
 });
@@ -1798,7 +1827,10 @@ __webpack_require__.r(__webpack_exports__);
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
-    meta: false,
+    meta: {
+      text: "Winner To Finals >",
+      changeToTab: 4
+    },
     id: "moon-r3-m1"
   }]
 });
@@ -1864,7 +1896,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106585906994122752",
     voteTime: "3/15 12pm",
     meta: false,
-    id: "stars-r1-m4"
+    id: "stars-r1-m4",
+    results: {
+      playerA: 158,
+      playerB: 175
+    }
   }],
   round2: [{
     playerA: "unknown",
@@ -1875,7 +1911,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "stars-r2-m1"
   }, {
     playerA: "5×12",
-    playerB: "unknown",
+    playerB: "4×8",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1886,7 +1922,10 @@ __webpack_require__.r(__webpack_exports__);
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
-    meta: false,
+    meta: {
+      text: "Winner To Finals >",
+      changeToTab: 4
+    },
     id: "stars-r3-m1"
   }]
 });
@@ -1950,7 +1989,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "2×20",
     playerB: "4×21",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/16 6pm",
     meta: false,
     id: "sun-r1-m4"
   }],
@@ -1974,7 +2013,10 @@ __webpack_require__.r(__webpack_exports__);
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
-    meta: false,
+    meta: {
+      text: "Winner To Finals >",
+      changeToTab: 4
+    },
     id: "sun-r3-m1"
   }]
 });
@@ -2000,7 +2042,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[3], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[2], _conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[3]]);
 
 /***/ }),
 
@@ -2019,6 +2061,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   "1×14": {
     id: "1×14",
+    eliminated: true,
     name: "Suited for Success",
     season: 1,
     episode: 14,

@@ -59,7 +59,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106585906994122752",
     voteTime: "3/15 12pm",
     meta: false,
-    id: "stars-r1-m4"
+    id: "stars-r1-m4",
+    results: {
+      playerA: 158,
+      playerB: 175
+    }
   }],
   round2: [{
     playerA: "unknown",
@@ -70,7 +74,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "stars-r2-m1"
   }, {
     playerA: "5×12",
-    playerB: "unknown",
+    playerB: "4×8",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -81,7 +85,10 @@ __webpack_require__.r(__webpack_exports__);
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
-    meta: false,
+    meta: {
+      text: "Winner To Finals >",
+      changeToTab: 4
+    },
     id: "stars-r3-m1"
   }]
 });
@@ -89,4 +96,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.5c1a4d559b585589a0ae.hot-update.js.map
+//# sourceMappingURL=index.js.d6486dd7fdc9a777a124.hot-update.js.map
