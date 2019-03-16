@@ -272,6 +272,7 @@ export default {
   },
   "4×14": {
     id: "4×14",
+    eliminated: true,
     name: "Filli Vanilli",
     season: 4,
     episode: 14,
