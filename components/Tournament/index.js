@@ -61,16 +61,32 @@ class Tournament extends React.Component {
         />
         <BracketWrap>
           {this.state.activeTab === 0 && (
-            <Bracket {...Sun} toggleModal={this.props.toggleModal} />
+            <Bracket
+              {...Sun}
+              toggleModal={this.props.toggleModal}
+              switchTab={this.switchTab}
+            />
           )}
           {this.state.activeTab === 1 && (
-            <Bracket {...Moon} toggleModal={this.props.toggleModal} />
+            <Bracket
+              {...Moon}
+              toggleModal={this.props.toggleModal}
+              switchTab={this.switchTab}
+            />
           )}
           {this.state.activeTab === 2 && (
-            <Bracket {...Stars} toggleModal={this.props.toggleModal} />
+            <Bracket
+              {...Stars}
+              toggleModal={this.props.toggleModal}
+              switchTab={this.switchTab}
+            />
           )}
           {this.state.activeTab === 3 && (
-            <Bracket {...Chaos} toggleModal={this.props.toggleModal} />
+            <Bracket
+              {...Chaos}
+              toggleModal={this.props.toggleModal}
+              switchTab={this.switchTab}
+            />
           )}
           {this.state.activeTab === 4 && (
             <Bracket {...Finals} toggleModal={this.props.toggleModal} />

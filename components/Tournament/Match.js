@@ -4,8 +4,9 @@ import Player from "./Player";
 const StyledDiv = styled.div`
   border: 1px solid ${props => props.theme.blue};
   border-radius: 2px;
+  position: relative;
   width: 265px;
-  & > div:not(:last-child) {
+  & > div:not(:last-of-type) {
     border-bottom: 1px solid ${props => props.theme.blue};
   }
   &:not(:first-child) {
@@ -16,10 +17,30 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Match = ({ playerA, playerB = null, color = false, ...props }) => (
+const MetaLink = styled.span`
+  color: #878383;
+  cursor: pointer;
+  font-size: 0.6em;
+  margin-top: 5px;
+  position: absolute;
+  right: 0;
+`;
+
+const Match = ({
+  playerA,
+  playerB = null,
+  color = false,
+  meta = false,
+  ...props
+}) => (
   <StyledDiv data-matchid={props.id} style={{ borderColor: color }}>
     <Player {...playerA} color={color} toggleModal={props.toggleModal} />
     <Player {...playerB} color={color} toggleModal={props.toggleModal} />
+    {meta && (
+      <MetaLink onClick={() => props.switchTab(meta.changeToTab)}>
+        {meta.text}
+      </MetaLink>
+    )}
   </StyledDiv>
 );
 

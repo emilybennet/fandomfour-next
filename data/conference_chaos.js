@@ -81,7 +81,10 @@ export default {
       playerB: "unknown",
       voteUrl: null,
       voteTime: null,
-      meta: false,
+      meta: {
+        text: "Winner To Finals >",
+        changeToTab: 4
+      },
       id: "chaos-r3-m1"
     }
   ]

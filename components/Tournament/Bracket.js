@@ -51,7 +51,6 @@ const RoundColumn = styled.div`
 
 const Round = ({ matches, color, ...props }) => {
   let unknownId = 0;
-
   return (
     <RoundColumn>
       {matches.map(m => (
@@ -61,7 +60,9 @@ const Round = ({ matches, color, ...props }) => {
           color={color}
           key={m.id}
           id={m.id}
+          meta={m.meta}
           toggleModal={props.toggleModal}
+          switchTab={props.switchTab}
         />
       ))}
     </RoundColumn>
@@ -70,26 +71,51 @@ const Round = ({ matches, color, ...props }) => {
 
 const TwoRounds = ({ round1, round2, round3, color = null, ...props }) => (
   <ContainerTwoRounds>
-    <Round matches={round1} color={color} toggleModal={props.toggleModal} />
+    <Round
+      matches={round1}
+      color={color}
+      toggleModal={props.toggleModal}
+      switchTab={props.switchTab}
+    />
     <BraceColumn>
       <BraceLevel1 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round2} color={color} toggleModal={props.toggleModal} />
+    <Round
+      matches={round2}
+      color={color}
+      toggleModal={props.toggleModal}
+      switchTab={props.switchTab}
+    />
   </ContainerTwoRounds>
 );
 
 const ThreeRounds = ({ round1, round2, round3, color = null, ...props }) => (
   <Container>
-    <Round matches={round1} color={color} toggleModal={props.toggleModal} />
+    <Round
+      matches={round1}
+      color={color}
+      toggleModal={props.toggleModal}
+      switchTab={props.switchTab}
+    />
     <BraceColumn>
       <BraceLevel1 style={{ borderColor: color }} />
       <BraceLevel1 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round2} color={color} toggleModal={props.toggleModal} />
+    <Round
+      matches={round2}
+      color={color}
+      toggleModal={props.toggleModal}
+      switchTab={props.switchTab}
+    />
     <BraceColumn>
       <BraceLevel2 style={{ borderColor: color }} />
     </BraceColumn>
-    <Round matches={round3} color={color} toggleModal={props.toggleModal} />
+    <Round
+      matches={round3}
+      color={color}
+      toggleModal={props.toggleModal}
+      switchTab={props.switchTab}
+    />
   </Container>
 );
 
