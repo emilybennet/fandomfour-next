@@ -1776,7 +1776,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106676473388302339",
     voteTime: "3/15 6pm",
     meta: false,
-    id: "moon-r1-m1"
+    id: "moon-r1-m1",
+    results: {
+      playerA: 258,
+      playerB: 92
+    }
   }, {
     playerA: "2×5",
     playerB: "4×18",
@@ -1808,7 +1812,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "moon-r1-m4"
   }],
   round2: [{
-    playerA: "unknown",
+    playerA: "1×23",
     playerB: "4×18",
     voteUrl: null,
     voteTime: null,
@@ -1988,7 +1992,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "2×20",
     playerB: "4×21",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1107042816956469248",
     voteTime: "3/16 6pm",
     meta: false,
     id: "sun-r1-m4"
@@ -2308,6 +2312,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×14": {
     id: "4×14",
+    eliminated: true,
     name: "Filli Vanilli",
     season: 4,
     episode: 14,
