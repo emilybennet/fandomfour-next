@@ -5,6 +5,7 @@
 export default {
   "1×14": {
     id: "1×14",
+    eliminated: true,
     name: "Suited for Success",
     season: 1,
     episode: 14,
