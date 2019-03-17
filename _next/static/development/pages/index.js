@@ -1653,7 +1653,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1106948320986054658",
     voteTime: "3/16 12pm",
     meta: false,
-    id: "chaos-r1-m3"
+    id: "chaos-r1-m3",
+    results: {
+      playerA: 438,
+      playerB: 135
+    }
   }, {
     playerA: "5×18",
     playerB: "2×14",
@@ -1674,7 +1678,7 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "chaos-r2-m1"
   }, {
-    playerA: "unknown",
+    playerA: "4×12",
     playerB: "5×18",
     voteUrl: null,
     voteTime: null,
@@ -1807,7 +1811,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "7×10",
     playerB: "5×9",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/17 6pm",
     meta: false,
     id: "moon-r1-m4"
   }],
@@ -1974,8 +1978,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "8×23",
     playerB: "3×3",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1107310623539359744",
+    voteTime: "3/17 12pm",
     meta: false,
     id: "sun-r1-m2"
   }, {
@@ -2046,7 +2050,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[2], _conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[3]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[1], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[3]]);
 
 /***/ }),
 
@@ -2238,6 +2242,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×24": {
     id: "2×24",
+    eliminated: true,
     name: "MMMystery on the Friendship Express",
     season: 2,
     episode: 24,
