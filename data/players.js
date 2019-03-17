@@ -300,6 +300,7 @@ export default {
   },
   "4×21": {
     id: "4×21",
+    eliminated: true,
     name: "Testing Testing 1, 2, 3",
     season: 4,
     episode: 21,
