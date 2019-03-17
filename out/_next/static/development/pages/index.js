@@ -1999,7 +1999,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1107042816956469248",
     voteTime: "3/16 6pm",
     meta: false,
-    id: "sun-r1-m4"
+    id: "sun-r1-m4",
+    results: {
+      playerA: 194,
+      playerB: 178
+    }
   }],
   round2: [{
     playerA: "7×13",
@@ -2010,7 +2014,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "sun-r2-m1"
   }, {
     playerA: "1×16",
-    playerB: "unknown",
+    playerB: "2×20",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -2342,6 +2346,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×21": {
     id: "4×21",
+    eliminated: true,
     name: "Testing Testing 1, 2, 3",
     season: 4,
     episode: 21,
