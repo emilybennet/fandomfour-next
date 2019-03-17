@@ -1810,7 +1810,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "7×10",
     playerB: "5×9",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1107402984416337921",
     voteTime: "3/17 6pm",
     meta: false,
     id: "moon-r1-m4"
