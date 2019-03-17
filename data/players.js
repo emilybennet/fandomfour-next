@@ -192,6 +192,7 @@ export default {
   },
   "2×24": {
     id: "2×24",
+    eliminated: true,
     name: "MMMystery on the Friendship Express",
     season: 2,
     episode: 24,

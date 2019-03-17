@@ -42,7 +42,11 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1106948320986054658",
       voteTime: "3/16 12pm",
       meta: false,
-      id: "chaos-r1-m3"
+      id: "chaos-r1-m3",
+      results: {
+        playerA: 438,
+        playerB: 135
+      }
     },
     {
       playerA: "5×18",
@@ -67,7 +71,7 @@ export default {
       id: "chaos-r2-m1"
     },
     {
-      playerA: "unknown",
+      playerA: "4×12",
       playerB: "5×18",
       voteUrl: null,
       voteTime: null,

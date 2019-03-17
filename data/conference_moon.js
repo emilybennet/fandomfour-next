@@ -56,7 +56,7 @@ export default {
       playerA: "7×10",
       playerB: "5×9",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/17 6pm",
       meta: false,
       id: "moon-r1-m4"
     }
