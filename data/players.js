@@ -206,6 +206,7 @@ export default {
   },
   "3×3": {
     id: "3×3",
+    eliminated: true,
     name: "Too Many Pinkie Pies",
     season: 3,
     episode: 3,

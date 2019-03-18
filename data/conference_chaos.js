@@ -20,7 +20,7 @@ export default {
       playerA: "1×25",
       playerB: "5×10",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/18 6pm",
       meta: false,
       id: "chaos-r1-m1"
     },
