@@ -381,6 +381,7 @@ export default {
   },
   "7×10": {
     id: "7×10",
+    eliminated: true,
     name: "A Royal Problem",
     season: 7,
     episode: 10,
