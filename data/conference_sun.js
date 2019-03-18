@@ -36,8 +36,8 @@ export default {
       meta: false,
       id: "sun-r1-m2",
       results: {
-        playerA: 0,
-        playerB: 0
+        playerA: 304,
+        playerB: 138
       }
     },
     {
