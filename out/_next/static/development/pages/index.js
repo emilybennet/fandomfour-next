@@ -1632,7 +1632,7 @@ __webpack_require__.r(__webpack_exports__);
   round1: [{
     playerA: "1×25",
     playerB: "5×10",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1107763820515205122",
     voteTime: "3/18 6pm",
     meta: false,
     id: "chaos-r1-m1"
@@ -1813,7 +1813,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1107402984416337921",
     voteTime: "3/17 6pm",
     meta: false,
-    id: "moon-r1-m4"
+    id: "moon-r1-m4",
+    results: {
+      playerA: 172,
+      playerB: 256
+    }
   }],
   round2: [{
     playerA: "1×23",
@@ -1824,7 +1828,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "moon-r2-m1"
   }, {
     playerA: "2×22",
-    playerB: "unknown",
+    playerB: "5×9",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -1983,8 +1987,8 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "sun-r1-m2",
     results: {
-      playerA: 0,
-      playerB: 0
+      playerA: 304,
+      playerB: 138
     }
   }, {
     playerA: "1×16",
@@ -2425,6 +2429,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "7×10": {
     id: "7×10",
+    eliminated: true,
     name: "A Royal Problem",
     season: 7,
     episode: 10,
