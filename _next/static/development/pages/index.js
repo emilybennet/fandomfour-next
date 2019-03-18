@@ -1633,7 +1633,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×25",
     playerB: "5×10",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/18 6pm",
     meta: false,
     id: "chaos-r1-m1"
   }, {
@@ -1872,8 +1872,8 @@ __webpack_require__.r(__webpack_exports__);
   round1: [{
     playerA: "2×3",
     playerB: "2×8",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1107673061455785984",
+    voteTime: "3/18 12pm",
     meta: false,
     id: "stars-r1-m1"
   }, {
@@ -1981,7 +1981,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1107310623539359744",
     voteTime: "3/17 12pm",
     meta: false,
-    id: "sun-r1-m2"
+    id: "sun-r1-m2",
+    results: {
+      playerA: 0,
+      playerB: 0
+    }
   }, {
     playerA: "1×16",
     playerB: "2×16",
@@ -2007,7 +2011,7 @@ __webpack_require__.r(__webpack_exports__);
   }],
   round2: [{
     playerA: "7×13",
-    playerB: "unknown",
+    playerB: "8×23",
     voteUrl: null,
     voteTime: null,
     meta: false,
@@ -2054,7 +2058,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round1[1], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round1[3]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[0], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[0]]);
 
 /***/ }),
 
@@ -2259,6 +2263,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "3×3": {
     id: "3×3",
+    eliminated: true,
     name: "Too Many Pinkie Pies",
     season: 3,
     episode: 3,
