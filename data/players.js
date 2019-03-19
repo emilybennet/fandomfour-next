@@ -343,6 +343,7 @@ export default {
   },
   "5×10": {
     id: "5×10",
+    eliminated: true,
     name: "Princess Spike",
     season: 5,
     episode: 10,
