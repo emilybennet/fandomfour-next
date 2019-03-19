@@ -1635,7 +1635,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1107763820515205122",
     voteTime: "3/18 6pm",
     meta: false,
-    id: "chaos-r1-m1"
+    id: "chaos-r1-m1",
+    results: {
+      playerA: 402,
+      playerB: 58
+    }
   }, {
     playerA: "1×26",
     playerB: "2×11",
@@ -1671,7 +1675,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   }],
   round2: [{
-    playerA: "unknown",
+    playerA: "1×25",
     playerB: "1×26",
     voteUrl: null,
     voteTime: null,
@@ -1921,7 +1925,7 @@ __webpack_require__.r(__webpack_exports__);
   round2: [{
     playerA: "2×3",
     playerB: "2×4",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108126330523136000",
     voteTime: "3/19 6pm",
     meta: false,
     id: "stars-r2-m1"
@@ -2398,6 +2402,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×10": {
     id: "5×10",
+    eliminated: true,
     name: "Princess Spike",
     season: 5,
     episode: 10,
