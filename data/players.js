@@ -111,6 +111,7 @@ export default {
   },
   "2×8": {
     id: "2×8",
+    eliminated: true,
     name: "The Mysterious Mare Do Well",
     season: 2,
     episode: 8,

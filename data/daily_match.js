@@ -4,4 +4,4 @@ import stars from "./conference_stars";
 import chaos from "./conference_chaos";
 import finals from "./conference_finals";
 
-export default [stars.round1[0], chaos.round1[0]];
+export default [moon.round2[0], stars.round2[0]];
