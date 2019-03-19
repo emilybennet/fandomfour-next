@@ -1822,8 +1822,8 @@ __webpack_require__.r(__webpack_exports__);
   round2: [{
     playerA: "1×23",
     playerB: "4×18",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108035446515384325",
+    voteTime: "3/19 12pm",
     meta: false,
     id: "moon-r2-m1"
   }, {
@@ -1879,7 +1879,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1107673061455785984",
     voteTime: "3/18 12pm",
     meta: false,
-    id: "stars-r1-m1"
+    id: "stars-r1-m1",
+    results: {
+      playerA: 366,
+      playerB: 99
+    }
   }, {
     playerA: "2×4",
     playerB: "3×6",
@@ -1915,10 +1919,10 @@ __webpack_require__.r(__webpack_exports__);
     }
   }],
   round2: [{
-    playerA: "unknown",
+    playerA: "2×3",
     playerB: "2×4",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/19 6pm",
     meta: false,
     id: "stars-r2-m1"
   }, {
@@ -2062,7 +2066,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round1[0], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round1[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round2[0], _conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round2[0]]);
 
 /***/ }),
 
@@ -2179,6 +2183,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×8": {
     id: "2×8",
+    eliminated: true,
     name: "The Mysterious Mare Do Well",
     season: 2,
     episode: 8,
