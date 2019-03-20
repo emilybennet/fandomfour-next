@@ -289,6 +289,7 @@ export default {
   },
   "4×18": {
     id: "4×18",
+    eliminated: true,
     name: "Maud Pie",
     season: 4,
     episode: 18,

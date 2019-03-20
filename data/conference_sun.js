@@ -70,7 +70,7 @@ export default {
       playerA: "7×13",
       playerB: "8×23",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/20 6pm",
       meta: false,
       id: "sun-r2-m1"
     },
