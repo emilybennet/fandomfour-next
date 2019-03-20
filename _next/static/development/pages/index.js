@@ -1684,8 +1684,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "4×12",
     playerB: "5×18",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108397848788418560",
+    voteTime: "3/20 12pm",
     meta: false,
     id: "chaos-r2-m2"
   }],
@@ -1829,7 +1829,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1108035446515384325",
     voteTime: "3/19 12pm",
     meta: false,
-    id: "moon-r2-m1"
+    id: "moon-r2-m1",
+    results: {
+      playerA: 262,
+      playerB: 136
+    }
   }, {
     playerA: "2×22",
     playerB: "5×9",
@@ -2025,7 +2029,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "7×13",
     playerB: "8×23",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/20 6pm",
     meta: false,
     id: "sun-r2-m1"
   }, {
@@ -2070,7 +2074,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round2[0], _conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round2[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round2[1], _conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round2[0]]);
 
 /***/ }),
 
@@ -2352,6 +2356,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×18": {
     id: "4×18",
+    eliminated: true,
     name: "Maud Pie",
     season: 4,
     episode: 18,
