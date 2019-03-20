@@ -89,7 +89,7 @@ export default {
   ],
   round3: [
     {
-      playerA: "unknown",
+      playerA: "1×23",
       playerB: "unknown",
       voteUrl: null,
       voteTime: null,

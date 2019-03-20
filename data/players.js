@@ -71,6 +71,7 @@ export default {
   },
   "2×3": {
     id: "2×3",
+    eliminated: true,
     name: "Lesson Zero",
     season: 2,
     episode: 3,
