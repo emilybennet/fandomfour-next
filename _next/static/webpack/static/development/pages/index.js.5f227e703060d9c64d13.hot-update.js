@@ -76,6 +76,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×3": {
     id: "2×3",
+    eliminated: true,
     name: "Lesson Zero",
     season: 2,
     episode: 3,
@@ -423,4 +424,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.84f7e4a2c0039ec27234.hot-update.js.map
+//# sourceMappingURL=index.js.5f227e703060d9c64d13.hot-update.js.map

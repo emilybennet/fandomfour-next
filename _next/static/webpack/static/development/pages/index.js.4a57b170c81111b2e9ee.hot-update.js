@@ -89,7 +89,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "moon-r2-m2"
   }],
   round3: [{
-    playerA: "unknown",
+    playerA: "1×23",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -104,4 +104,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.4bea1cdf176323680a62.hot-update.js.map
+//# sourceMappingURL=index.js.4a57b170c81111b2e9ee.hot-update.js.map

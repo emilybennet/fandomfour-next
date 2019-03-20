@@ -1843,7 +1843,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "moon-r2-m2"
   }],
   round3: [{
-    playerA: "unknown",
+    playerA: "1×23",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1932,7 +1932,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1108126330523136000",
     voteTime: "3/19 6pm",
     meta: false,
-    id: "stars-r2-m1"
+    id: "stars-r2-m1",
+    results: {
+      playerA: 207,
+      playerB: 253
+    }
   }, {
     playerA: "5×12",
     playerB: "4×8",
@@ -1942,7 +1946,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "stars-r2-m2"
   }],
   round3: [{
-    playerA: "unknown",
+    playerA: "2×4",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -2028,7 +2032,7 @@ __webpack_require__.r(__webpack_exports__);
   round2: [{
     playerA: "7×13",
     playerB: "8×23",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108488483197329408",
     voteTime: "3/20 6pm",
     meta: false,
     id: "sun-r2-m1"
@@ -2154,6 +2158,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×3": {
     id: "2×3",
+    eliminated: true,
     name: "Lesson Zero",
     season: 2,
     episode: 3,
