@@ -427,6 +427,7 @@ export default {
   },
   "8×23": {
     id: "8×23",
+    eliminated: true,
     name: "Sounds of Silence",
     season: 8,
     episode: 23,
