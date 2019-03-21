@@ -263,6 +263,7 @@ export default {
   },
   "4×12": {
     id: "4×12",
+    eliminated: true,
     name: "Pinkie Pride",
     season: 4,
     episode: 12,
