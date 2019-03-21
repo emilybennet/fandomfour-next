@@ -80,7 +80,11 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1108397848788418560",
       voteTime: "3/20 12pm",
       meta: false,
-      id: "chaos-r2-m2"
+      id: "chaos-r2-m2",
+      results: {
+        playerA: 141,
+        player2: 222
+      }
     }
   ],
   round3: [
