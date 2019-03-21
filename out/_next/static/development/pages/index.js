@@ -957,6 +957,7 @@ var Round = function Round(_ref) {
       key: m.id,
       id: m.id,
       meta: m.meta,
+      results: m.results,
       toggleModal: props.toggleModal,
       switchTab: props.switchTab,
       __source: {
@@ -979,7 +980,7 @@ var TwoRounds = function TwoRounds(_ref2) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ContainerTwoRounds, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -989,13 +990,13 @@ var TwoRounds = function TwoRounds(_ref2) {
     switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 81
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1004,7 +1005,7 @@ var TwoRounds = function TwoRounds(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 82
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1014,7 +1015,7 @@ var TwoRounds = function TwoRounds(_ref2) {
     switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 84
     },
     __self: this
   }));
@@ -1031,7 +1032,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 94
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1041,13 +1042,13 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 101
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1056,7 +1057,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 102
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel1, {
@@ -1065,7 +1066,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1075,13 +1076,13 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceColumn, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 111
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BraceLevel2, {
@@ -1090,7 +1091,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 112
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Round, {
@@ -1100,7 +1101,7 @@ var ThreeRounds = function ThreeRounds(_ref3) {
     switchTab: props.switchTab,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: this
   }));
@@ -1110,14 +1111,14 @@ var Bracket = function Bracket(props) {
   if (props.round3) return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThreeRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 124
     },
     __self: this
   }));
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TwoRounds, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: this
   }));
@@ -1169,7 +1170,12 @@ var Match = function Match(_ref) {
       color = _ref$color === void 0 ? false : _ref$color,
       _ref$meta = _ref.meta,
       meta = _ref$meta === void 0 ? false : _ref$meta,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["playerA", "playerB", "color", "meta"]);
+      _ref$results = _ref.results,
+      results = _ref$results === void 0 ? {
+    playerA: 0,
+    playerB: 0
+  } : _ref$results,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["playerA", "playerB", "color", "meta", "results"]);
 
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StyledDiv, {
     "data-matchid": props.id,
@@ -1178,23 +1184,25 @@ var Match = function Match(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerA, {
     color: color,
     toggleModal: props.toggleModal,
+    matchWinner: results.playerA > results.playerB,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Player__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, playerB, {
     color: color,
     toggleModal: props.toggleModal,
+    matchWinner: results.playerA < results.playerB,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 44
     },
     __self: this
   })), meta && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(MetaLink, {
@@ -1203,7 +1211,7 @@ var Match = function Match(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 51
     },
     __self: this
   }, meta.text));
@@ -1247,13 +1255,15 @@ var Player = function Player(_ref) {
       color = _ref.color,
       _ref$eliminated = _ref.eliminated,
       eliminated = _ref$eliminated === void 0 ? false : _ref$eliminated,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "eliminated"]);
+      _ref$matchWinner = _ref.matchWinner,
+      matchWinner = _ref$matchWinner === void 0 ? false : _ref$matchWinner,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "eliminated", "matchWinner"]);
 
   var styles = {
     borderColor: color
   };
 
-  if (eliminated || id === "???") {
+  if (eliminated && !matchWinner || id === "???") {
     color = "#E5E5E5";
     styles.color = "#CCCCCC";
     styles.textDecoration = "line-through";
@@ -1269,7 +1279,7 @@ var Player = function Player(_ref) {
     style: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_EpisodeId__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1277,7 +1287,7 @@ var Player = function Player(_ref) {
     color: color,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 39
     },
     __self: this
   }), name);
@@ -1687,7 +1697,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1108397848788418560",
     voteTime: "3/20 12pm",
     meta: false,
-    id: "chaos-r2-m2"
+    id: "chaos-r2-m2",
+    results: {
+      playerA: 141,
+      player2: 222
+    }
   }],
   round3: [{
     playerA: "unknown",
@@ -2035,17 +2049,21 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1108488483197329408",
     voteTime: "3/20 6pm",
     meta: false,
-    id: "sun-r2-m1"
+    id: "sun-r2-m1",
+    results: {
+      playerA: 394,
+      playerB: 105
+    }
   }, {
     playerA: "1×16",
     playerB: "2×20",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108850786530979845",
     voteTime: "3/21 6pm",
     meta: false,
     id: "sun-r2-m2"
   }],
   round3: [{
-    playerA: "unknown",
+    playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -2488,6 +2506,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "8×23": {
     id: "8×23",
+    eliminated: true,
     name: "Sounds of Silence",
     season: 8,
     episode: 23,
