@@ -61,6 +61,7 @@ const Round = ({ matches, color, ...props }) => {
           key={m.id}
           id={m.id}
           meta={m.meta}
+          results={m.results}
           toggleModal={props.toggleModal}
           switchTab={props.switchTab}
         />

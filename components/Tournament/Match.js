@@ -31,11 +31,22 @@ const Match = ({
   playerB = null,
   color = false,
   meta = false,
+  results = { playerA: 0, playerB: 0 },
   ...props
 }) => (
   <StyledDiv data-matchid={props.id} style={{ borderColor: color }}>
-    <Player {...playerA} color={color} toggleModal={props.toggleModal} />
-    <Player {...playerB} color={color} toggleModal={props.toggleModal} />
+    <Player
+      {...playerA}
+      color={color}
+      toggleModal={props.toggleModal}
+      matchWinner={results.playerA > results.playerB}
+    />
+    <Player
+      {...playerB}
+      color={color}
+      toggleModal={props.toggleModal}
+      matchWinner={results.playerA < results.playerB}
+    />
     {meta && (
       <MetaLink onClick={() => props.switchTab(meta.changeToTab)}>
         {meta.text}

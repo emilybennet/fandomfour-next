@@ -10,10 +10,18 @@ const StyledDiv = styled.div`
   width: 100%;
 `;
 
-const Player = ({ name, id, color, eliminated = false, ...props }) => {
+const Player = ({
+  name,
+  id,
+  color,
+  eliminated = false,
+  matchWinner = false,
+  ...props
+}) => {
   let styles = {
     borderColor: color
   };
+  // if ((eliminated && !matchWinner) || id === "???") {
   if (eliminated || id === "???") {
     color = "#E5E5E5";
     styles.color = "#CCCCCC";
