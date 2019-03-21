@@ -1691,7 +1691,7 @@ __webpack_require__.r(__webpack_exports__);
   }],
   round3: [{
     playerA: "unknown",
-    playerB: "unknown",
+    playerB: "5×18",
     voteUrl: null,
     voteTime: null,
     meta: {
@@ -1940,8 +1940,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "5×12",
     playerB: "4×8",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108760227925684224",
+    voteTime: "3/21 12pm",
     meta: false,
     id: "stars-r2-m2"
   }],
@@ -2040,7 +2040,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×16",
     playerB: "2×20",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/21 6pm",
     meta: false,
     id: "sun-r2-m2"
   }],
@@ -2078,7 +2078,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round2[1], _conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round2[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round2[1], _conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round2[1]]);
 
 /***/ }),
 
@@ -2336,6 +2336,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×12": {
     id: "4×12",
+    eliminated: true,
     name: "Pinkie Pride",
     season: 4,
     episode: 12,

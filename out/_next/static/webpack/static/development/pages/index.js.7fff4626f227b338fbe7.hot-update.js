@@ -254,6 +254,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "4×12": {
     id: "4×12",
+    eliminated: true,
     name: "Pinkie Pride",
     season: 4,
     episode: 12,
@@ -424,4 +425,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.5f227e703060d9c64d13.hot-update.js.map
+//# sourceMappingURL=index.js.7fff4626f227b338fbe7.hot-update.js.map

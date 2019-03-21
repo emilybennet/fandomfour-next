@@ -83,8 +83,8 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "5×12",
     playerB: "4×8",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1108760227925684224",
+    voteTime: "3/21 12pm",
     meta: false,
     id: "stars-r2-m2"
   }],
@@ -104,4 +104,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.62647a0cd92c21574a89.hot-update.js.map
+//# sourceMappingURL=index.js.f5f199c6608ec1a1b58d.hot-update.js.map
