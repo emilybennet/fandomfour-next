@@ -21,8 +21,7 @@ const Player = ({
   let styles = {
     borderColor: color
   };
-  // if ((eliminated && !matchWinner) || id === "???") {
-  if (eliminated || id === "???") {
+  if ((eliminated && !matchWinner) || id === "???") {
     color = "#E5E5E5";
     styles.color = "#CCCCCC";
     styles.textDecoration = "line-through";
