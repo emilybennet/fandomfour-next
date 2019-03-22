@@ -1851,7 +1851,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     playerA: "2×22",
     playerB: "5×9",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1109214127820627968",
     voteTime: "3/22 6pm",
     meta: false,
     id: "moon-r2-m2"
@@ -2064,11 +2064,15 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1108850786530979845",
     voteTime: "3/21 6pm",
     meta: false,
-    id: "sun-r2-m2"
+    id: "sun-r2-m2",
+    results: {
+      playerA: 282,
+      playerB: 143
+    }
   }],
   round3: [{
     playerA: "7×13",
-    playerB: "unknown",
+    playerB: "1×16",
     voteUrl: null,
     voteTime: null,
     meta: {
@@ -2270,6 +2274,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×20": {
     id: "2×20",
+    eliminated: true,
     name: "It's About Time",
     season: 2,
     episode: 20,
