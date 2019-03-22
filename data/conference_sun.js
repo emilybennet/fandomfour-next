@@ -84,13 +84,17 @@ export default {
       voteUrl: "https://twitter.com/BronyCon/status/1108850786530979845",
       voteTime: "3/21 6pm",
       meta: false,
-      id: "sun-r2-m2"
+      id: "sun-r2-m2",
+      results: {
+        playerA: 282,
+        playerB: 143
+      }
     }
   ],
   round3: [
     {
       playerA: "7×13",
-      playerB: "unknown",
+      playerB: "1×16",
       voteUrl: null,
       voteTime: null,
       meta: {

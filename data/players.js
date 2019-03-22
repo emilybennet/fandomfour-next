@@ -168,6 +168,7 @@ export default {
   },
   "2×20": {
     id: "2×20",
+    eliminated: true,
     name: "It's About Time",
     season: 2,
     episode: 20,
