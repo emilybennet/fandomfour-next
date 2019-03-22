@@ -236,6 +236,7 @@ export default {
   },
   "4×8": {
     id: "4×8",
+    eliminated: true,
     name: "Rarity Takes Manehattan",
     season: 4,
     episode: 8,

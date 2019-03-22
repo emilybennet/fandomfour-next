@@ -69,8 +69,8 @@ export default {
     {
       playerA: "1×25",
       playerB: "1×26",
-      voteUrl: null,
-      voteTime: null,
+      voteUrl: "https://twitter.com/BronyCon/status/1109123319943610368",
+      voteTime: "3/22 12pm",
       meta: false,
       id: "chaos-r2-m1"
     },
