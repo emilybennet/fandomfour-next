@@ -1883,11 +1883,15 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1109214127820627968",
     voteTime: "3/22 6pm",
     meta: false,
-    id: "moon-r2-m2"
+    id: "moon-r2-m2",
+    results: {
+      playerA: 131,
+      playerB: 300
+    }
   }],
   round3: [{
     playerA: "1×23",
-    playerB: "unknown",
+    playerB: "5×9",
     voteUrl: null,
     voteTime: "3/25 6pm",
     meta: {
@@ -2317,6 +2321,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×22": {
     id: "2×22",
+    eliminated: true,
     name: "Hurricane Fluttershy",
     season: 2,
     episode: 22,

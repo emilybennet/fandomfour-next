@@ -180,6 +180,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×22": {
     id: "2×22",
+    eliminated: true,
     name: "Hurricane Fluttershy",
     season: 2,
     episode: 22,
@@ -429,4 +430,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.fb92a37c291358698d51.hot-update.js.map
+//# sourceMappingURL=index.js.28205cc4242b78652c30.hot-update.js.map

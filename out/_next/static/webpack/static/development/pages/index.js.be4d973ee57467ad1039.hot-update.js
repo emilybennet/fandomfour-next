@@ -86,11 +86,15 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1109214127820627968",
     voteTime: "3/22 6pm",
     meta: false,
-    id: "moon-r2-m2"
+    id: "moon-r2-m2",
+    results: {
+      playerA: 131,
+      playerB: 300
+    }
   }],
   round3: [{
     playerA: "1×23",
-    playerB: "unknown",
+    playerB: "5×9",
     voteUrl: null,
     voteTime: "3/25 6pm",
     meta: {
@@ -104,4 +108,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.f1aa66589113536b4281.hot-update.js.map
+//# sourceMappingURL=index.js.be4d973ee57467ad1039.hot-update.js.map
