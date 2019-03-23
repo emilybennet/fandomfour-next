@@ -92,7 +92,7 @@ export default {
       playerA: "1×23",
       playerB: "unknown",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/25 6pm",
       meta: {
         text: "Winner To Finals >",
         changeToTab: 4

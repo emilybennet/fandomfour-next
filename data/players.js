@@ -58,6 +58,7 @@ export default {
   },
   "1×26": {
     id: "1×26",
+    eliminated: true,
     name: "The Best Night Ever",
     season: 1,
     episode: 26,
