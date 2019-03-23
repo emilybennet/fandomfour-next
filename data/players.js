@@ -183,6 +183,7 @@ export default {
   },
   "2×22": {
     id: "2×22",
+    eliminated: true,
     name: "Hurricane Fluttershy",
     season: 2,
     episode: 22,
