@@ -137,6 +137,31 @@ var Player = function Player(_ref) {
       rotate = _ref$rotate === void 0 ? 0 : _ref$rotate,
       props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["player", "rotate"]);
 
+  if (player.id === "???") return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerContainer, {
+    className: "player",
+    style: {
+      cursor: "default"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerNameplate, {
+    className: "player-nameplate",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerName, {
+    className: "player-name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }, "???"));
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerContainer, {
     className: "player",
     onClick: function onClick() {
@@ -144,21 +169,21 @@ var Player = function Player(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 94
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerNameplate, {
     className: "player-nameplate",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 98
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerName, {
     className: "player-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 99
     },
     __self: this
   }, player.name));
@@ -179,7 +204,7 @@ var VoteBtn = function VoteBtn(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 107
     },
     __self: this
   });
@@ -188,7 +213,7 @@ var VoteBtn = function VoteBtn(_ref2) {
     disabled: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 114
     },
     __self: this
   });
@@ -209,7 +234,7 @@ var Match = function Match(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 127
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
@@ -218,13 +243,13 @@ var Match = function Match(_ref3) {
     toggleModal: toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 128
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Versus, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 129
     },
     __self: this
   }, "Versus"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
@@ -233,13 +258,13 @@ var Match = function Match(_ref3) {
     toggleModal: toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 130
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MatchActions, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 131
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(VoteBtn, {
@@ -247,7 +272,7 @@ var Match = function Match(_ref3) {
     voteTime: voteTime,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 132
     },
     __self: this
   })));
@@ -313,13 +338,13 @@ var DailyMatch = function DailyMatch(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleYellow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
-  }, "Today\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
+  }, "Monday\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
@@ -328,13 +353,13 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Divider, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1], {
@@ -343,7 +368,7 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }))));
@@ -1690,7 +1715,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1109123319943610368",
     voteTime: "3/22 12pm",
     meta: false,
-    id: "chaos-r2-m1"
+    id: "chaos-r2-m1",
+    results: {
+      playerA: 331,
+      playerB: 276
+    }
   }, {
     playerA: "4×12",
     playerB: "5×18",
@@ -1704,7 +1733,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   }],
   round3: [{
-    playerA: "unknown",
+    playerA: "1×25",
     playerB: "5×18",
     voteUrl: null,
     voteTime: null,
@@ -1860,7 +1889,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×23",
     playerB: "unknown",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/25 6pm",
     meta: {
       text: "Winner To Finals >",
       changeToTab: 4
@@ -2074,7 +2103,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "7×13",
     playerB: "1×16",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/25 12pm",
     meta: {
       text: "Winner To Finals >",
       changeToTab: 4
@@ -2104,7 +2133,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round2[0], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round2[1]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round3[0], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round3[0]]);
 
 /***/ }),
 
@@ -2172,6 +2201,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "1×26": {
     id: "1×26",
+    eliminated: true,
     name: "The Best Night Ever",
     season: 1,
     episode: 26,
