@@ -82,15 +82,24 @@ const MatchActions = styled.footer`
   margin-top: 70px;
 `;
 
-const Player = ({ player, rotate = 0, ...props }) => (
-  <PlayerContainer
-    className="player"
-    onClick={() => props.toggleModal(player.id)}
-  >
-    <PlayerNameplate className="player-nameplate" />
-    <PlayerName className="player-name">{player.name}</PlayerName>
-  </PlayerContainer>
-);
+const Player = ({ player, rotate = 0, ...props }) => {
+  if (player.id === "???")
+    return (
+      <PlayerContainer className="player" style={{ cursor: "default" }}>
+        <PlayerNameplate className="player-nameplate" />
+        <PlayerName className="player-name">???</PlayerName>
+      </PlayerContainer>
+    );
+  return (
+    <PlayerContainer
+      className="player"
+      onClick={() => props.toggleModal(player.id)}
+    >
+      <PlayerNameplate className="player-nameplate" />
+      <PlayerName className="player-name">{player.name}</PlayerName>
+    </PlayerContainer>
+  );
+};
 
 const VoteBtn = ({ voteUrl = null, voteTime = null, ...props }) => {
   if (voteUrl)
