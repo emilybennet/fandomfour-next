@@ -48,8 +48,7 @@ const TitleYellow = styled(Title)`
 const DailyMatch = props => {
   return (
     <Container>
-      {/* <TitleYellow>Today&rsquo;s Matches</TitleYellow> */}
-      <TitleYellow>Monday&rsquo;s Matches</TitleYellow>
+      <TitleYellow>Today&rsquo;s Matches</TitleYellow>
       <Matches>
         <Match
           {...dailyMatch[0]}
