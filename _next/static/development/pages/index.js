@@ -338,13 +338,13 @@ var DailyMatch = function DailyMatch(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleYellow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 51
     },
     __self: this
-  }, "Monday\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
+  }, "Today\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
@@ -353,13 +353,13 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Divider, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 59
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1], {
@@ -368,7 +368,7 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 60
     },
     __self: this
   }))));
@@ -1892,7 +1892,7 @@ __webpack_require__.r(__webpack_exports__);
   round3: [{
     playerA: "1×23",
     playerB: "5×9",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1110302892089634816",
     voteTime: "3/25 6pm",
     meta: {
       text: "Winner To Finals >",
