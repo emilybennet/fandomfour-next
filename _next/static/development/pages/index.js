@@ -1282,7 +1282,9 @@ var Player = function Player(_ref) {
       eliminated = _ref$eliminated === void 0 ? false : _ref$eliminated,
       _ref$matchWinner = _ref.matchWinner,
       matchWinner = _ref$matchWinner === void 0 ? false : _ref$matchWinner,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "eliminated", "matchWinner"]);
+      _ref$playerColor = _ref.playerColor,
+      playerColor = _ref$playerColor === void 0 ? false : _ref$playerColor,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["name", "id", "color", "eliminated", "matchWinner", "playerColor"]);
 
   var styles = {
     borderColor: color
@@ -1304,15 +1306,15 @@ var Player = function Player(_ref) {
     style: styles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_EpisodeId__WEBPACK_IMPORTED_MODULE_3__["default"], {
     id: id,
-    color: color,
+    color: playerColor ? playerColor : color,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }), name);
@@ -1545,7 +1547,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Tournament)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
-      activeTab: 0
+      activeTab: 2
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "switchTab", function (newIndex) {
@@ -1736,7 +1738,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "1×25",
     playerB: "5×18",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/26 6pm",
     meta: {
       text: "Winner To Finals >",
       changeToTab: 4
@@ -1771,7 +1773,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   round1: [{
-    playerA: "unknown",
+    playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1999,8 +2001,8 @@ __webpack_require__.r(__webpack_exports__);
   round3: [{
     playerA: "2×4",
     playerB: "5×12",
-    voteUrl: null,
-    voteTime: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1110572144495378435",
+    voteTime: "3/26 12pm",
     meta: {
       text: "Winner To Finals >",
       changeToTab: 4
@@ -2137,7 +2139,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_sun__WEBPACK_IMPORTED_MODULE_0__["default"].round3[0], _conference_moon__WEBPACK_IMPORTED_MODULE_1__["default"].round3[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round3[0], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round3[0]]);
 
 /***/ }),
 
@@ -2169,6 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "1×16": {
     id: "1×16",
+    eliminated: true,
     name: "Sonic Rainboom",
     season: 1,
     episode: 16,
@@ -2526,6 +2529,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "7×13": {
     id: "7×13",
+    playerColor: "#F0641E",
     name: "The Perfect Pear",
     season: 7,
     episode: 13,
