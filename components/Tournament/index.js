@@ -42,7 +42,7 @@ const BracketWrap = styled.div`
 
 class Tournament extends React.Component {
   state = {
-    activeTab: 0
+    activeTab: 2
   };
 
   switchTab = newIndex => {

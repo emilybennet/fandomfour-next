@@ -19,6 +19,7 @@ export default {
   },
   "1×16": {
     id: "1×16",
+    eliminated: true,
     name: "Sonic Rainboom",
     season: 1,
     episode: 16,
@@ -404,6 +405,7 @@ export default {
   },
   "7×13": {
     id: "7×13",
+    playerColor: "#F0641E",
     name: "The Perfect Pear",
     season: 7,
     episode: 13,

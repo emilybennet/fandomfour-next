@@ -101,7 +101,11 @@ export default {
         text: "Winner To Finals >",
         changeToTab: 4
       },
-      id: "sun-r3-m1"
+      id: "sun-r3-m1",
+      results: {
+        playerA: 318,
+        playerB: 104
+      }
     }
   ]
 };

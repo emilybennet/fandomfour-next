@@ -16,6 +16,7 @@ const Player = ({
   color,
   eliminated = false,
   matchWinner = false,
+  playerColor = false,
   ...props
 }) => {
   let styles = {
@@ -36,7 +37,7 @@ const Player = ({
       }}
       style={styles}
     >
-      <EpisodeId id={id} color={color} />
+      <EpisodeId id={id} color={playerColor ? playerColor : color} />
       {name}
     </StyledDiv>
   );
