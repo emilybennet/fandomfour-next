@@ -41,6 +41,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "1×23": {
     id: "1×23",
+    eliminated: true,
     name: "The Cutie Mark Chronicles",
     season: 1,
     episode: 23,
@@ -324,6 +325,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×9": {
     id: "5×9",
+    playerColor: "#5A3791",
     name: "Slice of Life",
     season: 5,
     episode: 9,
@@ -432,4 +434,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 })
-//# sourceMappingURL=index.js.8418fe0c83f1b18fe317.hot-update.js.map
+//# sourceMappingURL=index.js.af17070422418b2c3f93.hot-update.js.map

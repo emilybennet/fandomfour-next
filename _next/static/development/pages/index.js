@@ -1737,7 +1737,7 @@ __webpack_require__.r(__webpack_exports__);
   round3: [{
     playerA: "1×25",
     playerB: "5×18",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1110668206329470976",
     voteTime: "3/26 6pm",
     meta: {
       text: "Winner To Finals >",
@@ -1780,7 +1780,7 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "final-r1-m1"
   }, {
-    playerA: "unknown",
+    playerA: "5×9",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -1900,7 +1900,11 @@ __webpack_require__.r(__webpack_exports__);
       text: "Winner To Finals >",
       changeToTab: 4
     },
-    id: "moon-r3-m1"
+    id: "moon-r3-m1",
+    results: {
+      playerA: 161,
+      playerB: 348
+    }
   }]
 });
 
@@ -2114,7 +2118,11 @@ __webpack_require__.r(__webpack_exports__);
       text: "Winner To Finals >",
       changeToTab: 4
     },
-    id: "sun-r3-m1"
+    id: "sun-r3-m1",
+    results: {
+      playerA: 318,
+      playerB: 104
+    }
   }]
 });
 
@@ -2184,6 +2192,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "1×23": {
     id: "1×23",
+    eliminated: true,
     name: "The Cutie Mark Chronicles",
     season: 1,
     episode: 23,
@@ -2467,6 +2476,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×9": {
     id: "5×9",
+    playerColor: "#5A3791",
     name: "Slice of Life",
     season: 5,
     episode: 9,
