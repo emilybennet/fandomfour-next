@@ -24,7 +24,7 @@ export default {
       id: "final-r1-m1"
     },
     {
-      playerA: "unknown",
+      playerA: "5×9",
       playerB: "unknown",
       voteUrl: null,
       voteTime: null,

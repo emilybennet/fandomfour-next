@@ -33,6 +33,7 @@ export default {
   },
   "1×23": {
     id: "1×23",
+    eliminated: true,
     name: "The Cutie Mark Chronicles",
     season: 1,
     episode: 23,
@@ -338,6 +339,7 @@ export default {
   },
   "5×9": {
     id: "5×9",
+    playerColor: "#5A3791",
     name: "Slice of Life",
     season: 5,
     episode: 9,

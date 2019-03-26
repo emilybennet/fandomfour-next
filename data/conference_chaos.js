@@ -95,7 +95,7 @@ export default {
     {
       playerA: "1×25",
       playerB: "5×18",
-      voteUrl: null,
+      voteUrl: "https://twitter.com/BronyCon/status/1110668206329470976",
       voteTime: "3/26 6pm",
       meta: {
         text: "Winner To Finals >",
