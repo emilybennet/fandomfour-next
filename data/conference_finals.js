@@ -19,7 +19,7 @@ export default {
       playerA: "7×13",
       playerB: "unknown",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/27 6pm",
       meta: false,
       id: "final-r1-m1"
     },
@@ -27,7 +27,7 @@ export default {
       playerA: "5×9",
       playerB: "unknown",
       voteUrl: null,
-      voteTime: null,
+      voteTime: "3/28 6pm",
       meta: false,
       id: "final-r1-m2"
     }
