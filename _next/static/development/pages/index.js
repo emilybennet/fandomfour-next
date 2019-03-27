@@ -1781,7 +1781,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "final-r1-m1"
   }, {
     playerA: "5×9",
-    playerB: "unknown",
+    playerB: "2×4",
     voteUrl: null,
     voteTime: "3/28 6pm",
     meta: false,
@@ -2011,7 +2011,11 @@ __webpack_require__.r(__webpack_exports__);
       text: "Winner To Finals >",
       changeToTab: 4
     },
-    id: "stars-r3-m1"
+    id: "stars-r3-m1",
+    results: {
+      playerA: 286,
+      playerB: 263
+    }
   }]
 });
 
@@ -2243,6 +2247,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×4": {
     id: "2×4",
+    playerColor: "#FFC30F",
     name: "Luna Eclipsed",
     season: 2,
     episode: 4,
@@ -2502,6 +2507,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×12": {
     id: "5×12",
+    eliminated: true,
     name: "Amending Fences",
     season: 5,
     episode: 12,
