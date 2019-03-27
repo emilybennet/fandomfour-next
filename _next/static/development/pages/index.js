@@ -1776,7 +1776,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
-    voteTime: "3/27 6pm",
+    voteTime: "3/27 6:30pm",
     meta: false,
     id: "final-r1-m1"
   }, {
