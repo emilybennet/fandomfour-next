@@ -1743,7 +1743,11 @@ __webpack_require__.r(__webpack_exports__);
       text: "Winner To Finals >",
       changeToTab: 4
     },
-    id: "chaos-r3-m1"
+    id: "chaos-r3-m1",
+    results: {
+      playerA: 147,
+      playerB: 260
+    }
   }]
 });
 
@@ -1774,8 +1778,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   round1: [{
     playerA: "7×13",
-    playerB: "unknown",
-    voteUrl: null,
+    playerB: "5×18",
+    voteUrl: "https://twitter.com/BronyCon/status/1111032692085264384",
     voteTime: "3/27 6:30pm",
     meta: false,
     id: "final-r1-m1"
@@ -1783,7 +1787,7 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "5×9",
     playerB: "2×4",
     voteUrl: null,
-    voteTime: "3/28 6pm",
+    voteTime: "3/28 6:30p",
     meta: false,
     id: "final-r1-m2"
   }],
@@ -2209,6 +2213,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "1×25": {
     id: "1×25",
+    eliminated: true,
     name: "Party of One",
     season: 1,
     episode: 25,
@@ -2520,6 +2525,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×18": {
     id: "5×18",
+    playerColor: "#87C88C",
     name: "Crusaders of the Lost Mark",
     season: 5,
     episode: 18,
