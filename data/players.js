@@ -47,6 +47,7 @@ export default {
   },
   "1×25": {
     id: "1×25",
+    eliminated: true,
     name: "Party of One",
     season: 1,
     episode: 25,
@@ -88,6 +89,7 @@ export default {
   },
   "2×4": {
     id: "2×4",
+    playerColor: "#FFC30F",
     name: "Luna Eclipsed",
     season: 2,
     episode: 4,
@@ -367,6 +369,7 @@ export default {
   },
   "5×12": {
     id: "5×12",
+    eliminated: true,
     name: "Amending Fences",
     season: 5,
     episode: 12,
@@ -380,6 +383,7 @@ export default {
   },
   "5×18": {
     id: "5×18",
+    playerColor: "#87C88C",
     name: "Crusaders of the Lost Mark",
     season: 5,
     episode: 18,
