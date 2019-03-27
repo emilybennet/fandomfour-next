@@ -338,13 +338,13 @@ var DailyMatch = function DailyMatch(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleYellow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
-  }, "Today\u2019s Matches"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
+  }, "Semifinals"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
@@ -353,13 +353,13 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Divider, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1], {
@@ -368,7 +368,7 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }))));
@@ -1547,7 +1547,7 @@ function (_React$Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Tournament)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
-      activeTab: 2
+      activeTab: 4
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "switchTab", function (newIndex) {
@@ -1776,14 +1776,14 @@ __webpack_require__.r(__webpack_exports__);
     playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/27 6pm",
     meta: false,
     id: "final-r1-m1"
   }, {
     playerA: "5×9",
     playerB: "unknown",
     voteUrl: null,
-    voteTime: null,
+    voteTime: "3/28 6pm",
     meta: false,
     id: "final-r1-m2"
   }],
@@ -2147,7 +2147,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_stars__WEBPACK_IMPORTED_MODULE_2__["default"].round3[0], _conference_chaos__WEBPACK_IMPORTED_MODULE_3__["default"].round3[0]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_finals__WEBPACK_IMPORTED_MODULE_4__["default"].round1[0], _conference_finals__WEBPACK_IMPORTED_MODULE_4__["default"].round1[1]]);
 
 /***/ }),
 
