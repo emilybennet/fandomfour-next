@@ -90,13 +90,20 @@ const Player = ({ player, rotate = 0, ...props }) => {
         <PlayerName className="player-name">???</PlayerName>
       </PlayerContainer>
     );
+  const playerStyles = {};
+  if (player.eliminated) {
+    playerStyles.opacity = 0.4;
+    playerStyles.textDecoration = "line-through";
+  }
   return (
     <PlayerContainer
       className="player"
       onClick={() => props.toggleModal(player.id)}
     >
       <PlayerNameplate className="player-nameplate" />
-      <PlayerName className="player-name">{player.name}</PlayerName>
+      <PlayerName className="player-name" style={playerStyles}>
+        {player.name}
+      </PlayerName>
     </PlayerContainer>
   );
 };
@@ -111,7 +118,8 @@ const VoteBtn = ({ voteUrl = null, voteTime = null, ...props }) => {
       />
     );
   return (
-    <Button text={`Voting Opens @ ${voteTime || "???"}`} disabled={true} />
+    // <Button text={`Voting Opens @ ${voteTime || "???"}`} disabled={true} />
+    <Button text={`Voting Complete`} disabled={true} />
   );
 };
 

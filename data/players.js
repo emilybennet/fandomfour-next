@@ -383,6 +383,7 @@ export default {
   },
   "5×18": {
     id: "5×18",
+    eliminated: true,
     playerColor: "#87C88C",
     name: "Crusaders of the Lost Mark",
     season: 5,
