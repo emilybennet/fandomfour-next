@@ -162,6 +162,13 @@ var Player = function Player(_ref) {
     },
     __self: this
   }, "???"));
+  var playerStyles = {};
+
+  if (player.eliminated) {
+    playerStyles.opacity = 0.4;
+    playerStyles.textDecoration = "line-through";
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerContainer, {
     className: "player",
     onClick: function onClick() {
@@ -169,21 +176,22 @@ var Player = function Player(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 99
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerNameplate, {
     className: "player-nameplate",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 103
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerName, {
     className: "player-name",
+    style: playerStyles,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 104
     },
     __self: this
   }, player.name));
@@ -204,19 +212,21 @@ var VoteBtn = function VoteBtn(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
-    },
-    __self: this
-  });
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    text: "Voting Opens @ ".concat(voteTime || "???"),
-    disabled: true,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 114
     },
     __self: this
   });
+  return (// <Button text={`Voting Opens @ ${voteTime || "???"}`} disabled={true} />
+    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: "Voting Complete",
+      disabled: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 122
+      },
+      __self: this
+    })
+  );
 };
 
 var Match = function Match(_ref3) {
@@ -234,7 +244,7 @@ var Match = function Match(_ref3) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 135
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
@@ -243,13 +253,13 @@ var Match = function Match(_ref3) {
     toggleModal: toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 136
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Versus, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 137
     },
     __self: this
   }, "Versus"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Player, {
@@ -258,13 +268,13 @@ var Match = function Match(_ref3) {
     toggleModal: toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 138
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MatchActions, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 139
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(VoteBtn, {
@@ -272,7 +282,7 @@ var Match = function Match(_ref3) {
     voteTime: voteTime,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 140
     },
     __self: this
   })));
@@ -1779,20 +1789,25 @@ __webpack_require__.r(__webpack_exports__);
   round1: [{
     playerA: "7×13",
     playerB: "5×18",
-    voteUrl: "https://twitter.com/BronyCon/status/1111032692085264384",
+    // voteUrl: "https://twitter.com/BronyCon/status/1111032692085264384",
+    voteUrl: false,
     voteTime: "3/27 6:30pm",
     meta: false,
-    id: "final-r1-m1"
+    id: "final-r1-m1",
+    results: {
+      playerA: 567,
+      playerB: 262
+    }
   }, {
     playerA: "5×9",
     playerB: "2×4",
-    voteUrl: null,
+    voteUrl: "https://twitter.com/BronyCon/status/1111396420429455360",
     voteTime: "3/28 6:30p",
     meta: false,
     id: "final-r1-m2"
   }],
   round2: [{
-    playerA: "unknown",
+    playerA: "7×13",
     playerB: "unknown",
     voteUrl: null,
     voteTime: null,
@@ -2525,6 +2540,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "5×18": {
     id: "5×18",
+    eliminated: true,
     playerColor: "#87C88C",
     name: "Crusaders of the Lost Mark",
     season: 5,
