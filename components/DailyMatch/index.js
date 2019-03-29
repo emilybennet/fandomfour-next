@@ -49,7 +49,9 @@ const DailyMatch = props => {
   return (
     <Container>
       {/* <TitleYellow>Today&rsquo;s Matches</TitleYellow> */}
-      <TitleYellow>Semifinals</TitleYellow>
+      <TitleYellow>
+        Which is the best <em>MLP:FiM</em> episode?
+      </TitleYellow>
       <Matches>
         <Match
           {...dailyMatch[0]}
@@ -57,13 +59,13 @@ const DailyMatch = props => {
           playerB={players[dailyMatch[0].playerB]}
           toggleModal={props.toggleModal}
         />
-        <Divider />
+        {/* <Divider />
         <Match
           {...dailyMatch[1]}
           playerA={players[dailyMatch[1].playerA]}
           playerB={players[dailyMatch[1].playerB]}
           toggleModal={props.toggleModal}
-        />
+        /> */}
       </Matches>
     </Container>
   );

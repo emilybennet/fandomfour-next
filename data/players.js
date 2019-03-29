@@ -89,6 +89,7 @@ export default {
   },
   "2×4": {
     id: "2×4",
+    eliminated: true,
     playerColor: "#FFC30F",
     name: "Luna Eclipsed",
     season: 2,
