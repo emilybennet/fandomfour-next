@@ -351,10 +351,16 @@ var DailyMatch = function DailyMatch(props) {
       lineNumber: 52
     },
     __self: this
-  }, "Semifinals"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
+  }, "Which is the best ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("em", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
+    },
+    __self: this
+  }, "MLP:FiM"), " episode?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
@@ -363,22 +369,7 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Divider, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1], {
-    playerA: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerA],
-    playerB: _data_players__WEBPACK_IMPORTED_MODULE_5__["default"][_data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][1].playerB],
-    toggleModal: props.toggleModal,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 56
     },
     __self: this
   }))));
@@ -1804,13 +1795,17 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/BronyCon/status/1111396420429455360",
     voteTime: "3/28 6:30p",
     meta: false,
-    id: "final-r1-m2"
+    id: "final-r1-m2",
+    results: {
+      playerA: 339,
+      playerB: 189
+    }
   }],
   round2: [{
     playerA: "7×13",
-    playerB: "unknown",
-    voteUrl: null,
-    voteTime: null,
+    playerB: "5×9",
+    voteUrl: "https://twitter.com/bronycon/status/1111766442742038528?s=21",
+    voteTime: "3/29 7pm",
     meta: false,
     id: "final-r2-m1"
   }]
@@ -2169,8 +2164,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // export default [finals.round1[0], finals.round1[1]];
 
-/* harmony default export */ __webpack_exports__["default"] = ([_conference_finals__WEBPACK_IMPORTED_MODULE_4__["default"].round1[0], _conference_finals__WEBPACK_IMPORTED_MODULE_4__["default"].round1[1]]);
+/* harmony default export */ __webpack_exports__["default"] = ([_conference_finals__WEBPACK_IMPORTED_MODULE_4__["default"].round2[0]]);
 
 /***/ }),
 
@@ -2267,6 +2263,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "2×4": {
     id: "2×4",
+    eliminated: true,
     playerColor: "#FFC30F",
     name: "Luna Eclipsed",
     season: 2,
