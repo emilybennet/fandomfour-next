@@ -77,6 +77,105 @@ var Button = function Button(_ref) {
 
 /***/ }),
 
+/***/ "./components/Champion/Brust.js":
+/*!**************************************!*\
+  !*** ./components/Champion/Brust.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/Champion/Brust.js";
+
+
+var Burst = function Burst() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    version: "1.1",
+    id: "Layer_1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 10 8.4",
+    xmlSpace: "preserve",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polygon", {
+    points: "1.34,1.38 3.01,2.28 2.79,0 4.35,1.79 4.82,0.04 5.61,1.79 6.75,0.3 6.56,2.04 7.9,1.16 7.48,2.57 9.55,2.48 \n8,3.51 10,4.07 8.07,4.5 9.69,5.68 7.58,5.48 8.33,6.87 6.88,6.57 7.08,8.03 5.65,6.82 4.82,8.4 4.38,6.75 3.25,8.14 3.19,6.64 \n1.59,7.29 2.28,5.87 0.45,5.96 1.85,4.71 0,4.38 1.61,3.73 0.31,2.77 2.31,2.88 ",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Burst);
+
+/***/ }),
+
+/***/ "./components/Champion/index.js":
+/*!**************************************!*\
+  !*** ./components/Champion/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Brust__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Brust */ "./components/Champion/Brust.js");
+/* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Title */ "./components/Title.js");
+/* harmony import */ var _data_players__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../data/players */ "./data/players.js");
+var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/components/Champion/index.js";
+
+
+
+
+
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section.withConfig({
+  displayName: "Champion__Container",
+  componentId: "vbtpxd-0"
+})(["background:url(\"/static/karen-pattern.webp\") repeat,radial-gradient(60vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));overflow:hidden;padding:200px 15px;position:relative;z-index:400;.no-webp &{background:url(\"/static/karen-pattern.png\") repeat,radial-gradient(50vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);}"]);
+var Matches = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Champion__Matches",
+  componentId: "vbtpxd-1"
+})(["align-items:center;display:flex;flex-direction:row;justify-content:center;@media (max-width:973px){flex-direction:column;}"]);
+var TitleYellow = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Title__WEBPACK_IMPORTED_MODULE_3__["default"]).withConfig({
+  displayName: "Champion__TitleYellow",
+  componentId: "vbtpxd-2"
+})(["color:", ";"], function (props) {
+  return props.theme.yellow;
+});
+
+var DailyMatch = function DailyMatch(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Brust__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (DailyMatch);
+
+/***/ }),
+
 /***/ "./components/DailyMatch/Match.js":
 /*!****************************************!*\
   !*** ./components/DailyMatch/Match.js ***!
@@ -348,19 +447,19 @@ var DailyMatch = function DailyMatch(props) {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TitleYellow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 55
     },
     __self: this
   }, "Which is the best ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 56
     },
     __self: this
   }, "MLP:FiM"), " episode?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Matches, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Match__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _data_daily_match__WEBPACK_IMPORTED_MODULE_6__["default"][0], {
@@ -369,7 +468,7 @@ var DailyMatch = function DailyMatch(props) {
     toggleModal: props.toggleModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 59
     },
     __self: this
   }))));
@@ -1807,7 +1906,11 @@ __webpack_require__.r(__webpack_exports__);
     voteUrl: "https://twitter.com/bronycon/status/1111766442742038528?s=21",
     voteTime: "3/29 7pm",
     meta: false,
-    id: "final-r2-m1"
+    id: "final-r2-m1",
+    results: {
+      playerA: 0,
+      playerB: 0
+    }
   }]
 });
 
@@ -2564,6 +2667,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   "7×13": {
     id: "7×13",
+    eliminated: true,
     playerColor: "#F0641E",
     name: "The Perfect Pear",
     season: 7,
@@ -15772,8 +15876,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Header */ "./components/Header/index.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer/index.js");
 /* harmony import */ var _components_DailyMatch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/DailyMatch */ "./components/DailyMatch/index.js");
-/* harmony import */ var _components_Tournament__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Tournament */ "./components/Tournament/index.js");
-/* harmony import */ var _components_Modal__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Modal */ "./components/Modal/index.js");
+/* harmony import */ var _components_Champion__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Champion */ "./components/Champion/index.js");
+/* harmony import */ var _components_Tournament__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Tournament */ "./components/Tournament/index.js");
+/* harmony import */ var _components_Modal__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Modal */ "./components/Modal/index.js");
 
 
 
@@ -15782,6 +15887,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour-next/pages/index.js";
+
 
 
 
@@ -15834,42 +15940,35 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_DailyMatch__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        toggleModal: this.toggleModal,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Tournament__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Tournament__WEBPACK_IMPORTED_MODULE_13__["default"], {
         toggleModal: this.toggleModal,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 30
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 31
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Modal__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Modal__WEBPACK_IMPORTED_MODULE_14__["default"], {
         showModal: this.state.showModal,
         toggleModal: this.toggleModal,
         contentId: this.state.modalContentId,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 32
         },
         __self: this
       }));
