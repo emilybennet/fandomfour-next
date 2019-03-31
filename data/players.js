@@ -413,6 +413,7 @@ export default {
   },
   "7×13": {
     id: "7×13",
+    eliminated: true,
     playerColor: "#F0641E",
     name: "The Perfect Pear",
     season: 7,

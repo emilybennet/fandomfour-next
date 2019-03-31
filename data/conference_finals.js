@@ -48,7 +48,11 @@ export default {
       voteUrl: "https://twitter.com/bronycon/status/1111766442742038528?s=21",
       voteTime: "3/29 7pm",
       meta: false,
-      id: "final-r2-m1"
+      id: "final-r2-m1",
+      results: {
+        playerA: 578,
+        playerB: 634
+      }
     }
   ]
 };

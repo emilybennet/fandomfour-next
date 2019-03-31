@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import DailyMatch from "../components/DailyMatch";
+import Champion from "../components/Champion";
 import Tournament from "../components/Tournament";
 import Modal from "../components/Modal";
 
@@ -24,7 +25,8 @@ class HomePage extends React.Component {
     return (
       <div>
         <Header />
-        <DailyMatch toggleModal={this.toggleModal} />
+        {/* <DailyMatch toggleModal={this.toggleModal} /> */}
+        <Champion id="5×9" toggleModal={this.toggleModal} />
         <Tournament toggleModal={this.toggleModal} />
         <Footer />
         <Modal

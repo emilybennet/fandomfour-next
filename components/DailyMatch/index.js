@@ -49,6 +49,9 @@ const DailyMatch = props => {
   return (
     <Container>
       {/* <TitleYellow>Today&rsquo;s Matches</TitleYellow> */}
+      {/* <TitleYellow>
+        Semifinals
+      </TitleYellow> */}
       <TitleYellow>
         Which is the best <em>MLP:FiM</em> episode?
       </TitleYellow>
