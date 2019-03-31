@@ -144,35 +144,63 @@ var _jsxFileName = "/Users/ebennet/Projects/BronyCon/Fandom Four 2019/fandomfour
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section.withConfig({
   displayName: "Champion__Container",
   componentId: "vbtpxd-0"
-})(["background:url(\"/static/karen-pattern.webp\") repeat,radial-gradient(60vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));overflow:hidden;padding:200px 15px;position:relative;z-index:400;.no-webp &{background:url(\"/static/karen-pattern.png\") repeat,radial-gradient(50vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);}"]);
-var Matches = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Champion__Matches",
+})(["align-content:center;align-items:center;background:url(\"/static/karen-pattern.webp\") repeat,radial-gradient(60vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);clip-path:polygon(0 0,100% 0,100% 100%,0 calc(100% - 4vw));display:grid;font-size:1.5em;grid-template-columns:1fr;grid-template-rows:1fr;justify-items:center;max-height:30em;overflow:hidden;position:relative;text-align:center;z-index:400;.no-webp &{background:url(\"/static/karen-pattern.png\") repeat,radial-gradient(60vw at 50% 56.73%,#4fb0aa 0%,#334d90 100%);}svg{grid-column:1 / auto;grid-row:1 / auto;height:36em;mix-blend-mode:overlay;opacity:0.2;}polygon{fill:white;}"]);
+var WinnerIntel = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Champion__WinnerIntel",
   componentId: "vbtpxd-1"
-})(["align-items:center;display:flex;flex-direction:row;justify-content:center;@media (max-width:973px){flex-direction:column;}"]);
-var TitleYellow = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Title__WEBPACK_IMPORTED_MODULE_3__["default"]).withConfig({
-  displayName: "Champion__TitleYellow",
+})(["cursor:pointer;grid-column:1 / auto;grid-row:1 / auto;transform:rotate(2deg);"]);
+var WinnerName = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "Champion__WinnerName",
   componentId: "vbtpxd-2"
-})(["color:", ";"], function (props) {
+})(["color:", ";display:block;font-size:3em;font-style:italic;font-weight:600;"], function (props) {
+  return props.theme.white;
+});
+var YellowText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "Champion__YellowText",
+  componentId: "vbtpxd-3"
+})(["color:", ";display:block;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;"], function (props) {
   return props.theme.yellow;
 });
 
-var DailyMatch = function DailyMatch(props) {
+var Champion = function Champion(props) {
+  var player = _data_players__WEBPACK_IMPORTED_MODULE_4__["default"][props.id];
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Brust__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 69
     },
     __self: this
-  }));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WinnerIntel, {
+    onClick: function onClick() {
+      return props.toggleModal(player.id);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WinnerName, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, player.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(YellowText, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "2019 Grand Champion")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (DailyMatch);
+/* harmony default export */ __webpack_exports__["default"] = (Champion);
 
 /***/ }),
 
@@ -1908,8 +1936,8 @@ __webpack_require__.r(__webpack_exports__);
     meta: false,
     id: "final-r2-m1",
     results: {
-      playerA: 0,
-      playerB: 0
+      playerA: 578,
+      playerB: 634
     }
   }]
 });
@@ -15947,6 +15975,14 @@ function (_React$Component) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Champion__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        id: "5\xD79",
+        toggleModal: this.toggleModal,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Tournament__WEBPACK_IMPORTED_MODULE_13__["default"], {
